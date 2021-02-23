@@ -28,7 +28,7 @@
 #include "p33c_dac.h"
 
 /*********************************************************************************
- * @fn      volatile struct P33C_DAC_MODULE_s* p33c_DacModule_GetHandle(void)
+ * @fn      struct P33C_DAC_MODULE_s* p33c_DacModule_GetHandle(void)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Gets pointer to DAC Module SFR set
  * @param   void
@@ -52,7 +52,7 @@ volatile struct P33C_DAC_MODULE_s* p33c_DacModule_GetHandle(void)
 }
 
 /*********************************************************************************
- * @fn      volatile uint16_t p33c_DacModule_Dispose(void)
+ * @fn      uint16_t p33c_DacModule_Dispose(void)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Resets all DAC Module registers to their RESET default values
  * @param   void
@@ -82,7 +82,7 @@ volatile uint16_t p33c_DacModule_Dispose(void)
 }
 
 /*********************************************************************************
- * @fn      volatile struct P33C_DAC_MODULE_s p33c_DacModule_ConfigRead(void)
+ * @fn      struct P33C_DAC_MODULE_s p33c_DacModule_ConfigRead(void)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Read the current configuration from the DAC module base registers
  * @param   void
@@ -109,10 +109,10 @@ volatile struct P33C_DAC_MODULE_s p33c_DacModule_ConfigRead(void)
 }
 
 /*********************************************************************************
- * @fn      volatile uint16_t p33c_DacModule_ConfigWrite(volatile struct P33C_DAC_MODULE_s dacModuleConfig)
+ * @fn      uint16_t p33c_DacModule_ConfigWrite(volatile struct P33C_DAC_MODULE_s dacModuleConfig)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Writes a user-defined configuration to the DAC module base registers
- * @param   dacModuleConfig Digital-to-Analog converter module configuration of type struct P33C_DAC_MODULE_s
+ * @param   struct P33C_DAC_MODULE_s dacModuleConfig
  * @return  0 = failure, writing DAC module was not successful
  * @return  1 = success, writing DAC module was successful
  * 
@@ -148,11 +148,11 @@ volatile uint16_t p33c_DacModule_ConfigWrite(
 
 
 /*********************************************************************************
- * @fn      volatile struct P33C_DAC_INSTANCE_s* p33c_DacInstance_GetHandle(volatile uint16_t dacInstance)
+ * @fn      struct P33C_DAC_INSTANCE_s* p33c_DacInstance_GetHandle(volatile uint16_t dac_Instance)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Gets pointer to DAC Instance SFR set
- * @param   dacInstance  Index of the selected DAC Instance (1=DAC1, 2=DAC2, etc.)
- * @return  DAC instance object of type struct P33C_DAC_INSTANCE_s of the selected DAC instance 
+ * @param   uint16_t pgInstance   Index of the selected DAC Instance (1=DAC1, 2=DAC2, etc.)
+ * @return  struct P33C_DAC_INSTANCE_s DAC instance object of the selected DAC instance
  *  
  * @details
  *    This function returns the pointer to a DAC instance register set in 
@@ -162,22 +162,22 @@ volatile uint16_t p33c_DacModule_ConfigWrite(
  * 
  *********************************************************************************/
 
-volatile struct P33C_DAC_INSTANCE_s* p33c_DacInstance_GetHandle(volatile uint16_t dacInstance)
+volatile struct P33C_DAC_INSTANCE_s* p33c_DacInstance_GetHandle(volatile uint16_t dac_Instance)
 {
     volatile struct P33C_DAC_INSTANCE_s* dac;
     
     // Capture Handle: set pointer to memory address of desired DAC instance
     dac = (volatile struct P33C_DAC_INSTANCE_s*) 
-        ((volatile uint8_t*) &DAC1CONL + ((dacInstance - 1) * P33C_DAC_SFR_OFFSET));
+        ((volatile uint8_t*) &DAC1CONL + ((dac_Instance - 1) * P33C_DAC_SFR_OFFSET));
     
     return(dac);
 }
 
 /*********************************************************************************
- * @fn      volatile uint16_t p33c_DacInstance_Dispose(volatile uint16_t dacInstance)
+ * @fn      uint16_t p33c_DacInstance_Dispose(volatile uint16_t dacInstance)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Resets all DAC Instance registers to their RESET default values
- * @param   dacInstance  Index of the selected DAC Instance (1=DAC1, 2=DAC2, etc.)
+ * @param   uint16_t dacInstance
  * @return  0 = failure, disposing DAC instance was not successful
  * @return  1 = success, disposing DAC instance was successful
  * 
@@ -204,11 +204,11 @@ volatile uint16_t p33c_DacInstance_Dispose(volatile uint16_t dacInstance)
 }
 
 /*********************************************************************************
- * @fn      volatile struct P33C_DAC_INSTANCE_s p33c_DacInstance_ConfigRead(volatile uint16_t dacInstance)
+ * @fn      struct P33C_DAC_INSTANCE_s p33c_DacInstance_ConfigRead(volatile uint16_t dacInstance)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Read the current configuration from the DAC instance registers
- * @param   dacInstance  Index of the selected DAC Instance (1=DAC1, 2=DAC2, etc.)
- * @return  DAC instance object of type struct P33C_DAC_INSTANCE_s of the selected DAC instance
+ * @param   uint16_t dacInstance
+ * @return  struct P33C_DAC_INSTANCE_s
  * 
  * @details
  *     This function reads all registers with their current configuration into
@@ -231,11 +231,11 @@ volatile struct P33C_DAC_INSTANCE_s p33c_DacInstance_ConfigRead(volatile uint16_
 }
 
 /*********************************************************************************
- * @fn      volatile uint16_t p33c_DacInstance_ConfigWrite(volatile uint16_t dacInstance, volatile struct P33C_DAC_INSTANCE_s dacConfig)
+ * @fn      uint16_t p33c_DacInstance_ConfigWrite(volatile uint16_t dacInstance, volatile struct P33C_DAC_INSTANCE_s dacConfig)
  * @ingroup lib-layer-pral-functions-public-dac
  * @brief   Writes a user-defined configuration to the DAC instance registers
- * @param   dacInstance Index of the selected DAC Instance (1=DAC1, 2=DAC2, etc.)
- * @param   dacConfig DAC instance object of type struct P33C_DAC_INSTANCE_s of the selected DAC instance
+ * @param   uint16_t dacInstance
+ * @param   struct P33C_DAC_INSTANCE_s dacConfig
  * @return  0 = failure, writing DAC instance was not successful
  * @return  1 = success, writing DAC instance was successful
  * 
@@ -321,7 +321,7 @@ volatile struct P33C_DAC_MODULE_s dacModuleDefault = {
  * @var dacConfigClear
  * @ingroup lib-layer-pral-properties-private-dac
  * @brief Default RESET configuration of one DAC instance channel SFRs
- * @param dacConfigClear DAC instance Special Function Register (SFR) set
+ * @param dacConfigClear: DAC instance Special Function Register (SFR) set
  *
  * @details
  *   Default configuration of the DAC instance SFRs with all its registers 

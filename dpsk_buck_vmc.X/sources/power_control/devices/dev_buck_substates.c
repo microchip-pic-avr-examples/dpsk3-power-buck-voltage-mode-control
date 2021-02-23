@@ -102,6 +102,9 @@ volatile uint16_t SubState_PrepareVRampUp(volatile struct BUCK_CONVERTER_s *buck
     // Set BUSY bit until process is complete
     buckInstance->status.bits.busy = true;
     
+    // Copy user setting of voltage reference into loop reference
+    buckInstance->v_loop.reference = buckInstance->set_values.v_ref;
+    
     // Hijack voltage loop controller reference
     buckInstance->startup.v_ramp.reference = 0; // Reset Soft-Start Voltage Reference
     buckInstance->startup.i_ramp.reference = 0; // Reset Soft-Start Current Reference
@@ -334,7 +337,7 @@ volatile uint16_t SubState_IRampUp(volatile struct BUCK_CONVERTER_s *buckInstanc
             retval = BUCK_OPSRET_REPEAT;
         }
     }
-    else // Non-Current Loops Ending up here need to be lifted to PG_DELAY
+    else // In Non-Current Mode ramp-up ends up here and needs to be lifted to PG_DELAY
     { 
         buckInstance->v_loop.controller->Limits.MaxOutput = buckInstance->v_loop.maximum;
         retval = BUCK_OPSRET_COMPLETE; 

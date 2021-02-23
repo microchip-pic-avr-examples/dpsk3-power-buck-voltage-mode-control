@@ -39,12 +39,17 @@
 #define PWRSAV_SLEEP()  asm volatile ("PWRSAV #0\n")
 #define CPU_RESET()     asm volatile ("RESET\n")
 
-/**********************************************************************************
- * @def ALTWREG_SWAP
- * @brief Swaps the current working register set
- * @param  x: Index of new Working Register Set (Target) of type unsigned integer
- * @return Index of previous Working Register Set (Origin) of type unsigned integer
- **********************************************************************************/
+/*!ALTWREG_SWAP()
+ * ********************************************************************************
+ * Summary: Swaps the current working register set
+ * 
+ * Parameters:
+ *      uint16_t x: New Working Register Set (Target)
+ * 
+ * Returns: 
+ *      uint16_t:   Previous Working Register Set (Origin)
+ * 
+ * ********************************************************************************/
 #define ALTWREG_SWAP(x) __extension__ ({ \
     volatile uint16_t __x = (x), __v; \
     __asm__ ("ctxtswp %1;\n\t" : "=d" (__v) : "d" (__x)); __v; \
@@ -53,4 +58,3 @@
 
 #endif	/* P33C_CPU_MACROS_H */
 
-// end of file 

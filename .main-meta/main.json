@@ -4,7 +4,7 @@
    "content":{
       "metaDataVersion":"1.0.0",
       "name":"com.microchip.mplabx.project.dpsk3-power-buck-voltage-mode-control",
-      "version":"1.0.0",
+      "version":"1.1.0",
       "displayName":"DPSK3 Synchronous Buck Converter Voltage Mode Control",
       "projectName":"dpsk3-power-buck-voltage-mode-control",
       "shortDescription":"Digital control loop implementation of a simple voltage mode controller regulating the output voltage of a synchronous buck converter",
@@ -35,25 +35,26 @@
          }
       },
       "peripherals":[
-         "UART",
-         "PWM",
-         "SMPS PWM",
-         "ADC",
-         "TIMER",
-         "SPI",
-         "LCD"
+        "UART",
+        "PWM",
+        "SMPS PWM",
+        "ADC",
+        "TIMER",
+        "SPI",
+        "LCD"
       ],
       "subcategories": [
-		   "Power Management and Conversion"
+		"Power",
+		"Power Management and Conversion"
        ],
        "keywords": [
-		 "dsPIC",
-         "DSC",
-         "Digital Power Conversion",
-         "Digital Filters",
-         "Power Conversion",
-         "Power Supply",
-		 "SMPS"
+		"dsPIC",
+        "DSC",
+        "Digital Power Conversion",
+        "Digital Filters",
+        "Power Conversion",
+        "Power Supply",
+		"SMPS"
        ]
      }
 }

@@ -40,8 +40,8 @@
 /******************************************************************************************************
  * @fn 	  uint16_t Dsp_SetConfig(volatile struct DSP_CONFIG_s dsp_cfg) 
  * @ingroup lib-layer-pral-functions-public-dsp
- * @brief  Initializes the DSP engine in accordance to user settings 
- * @param  dsp_cfg DSP configuration SFR object of type struct DSP_CONFIG_s
+ * @brief Initializes the DSP engine in accordance to user settings 
+ * @param struct DSP_CONFIG_s dsp_cfg
  * @return unsigned integer (0=failure, 1=success)
  *
  * @details

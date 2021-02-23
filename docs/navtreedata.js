@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Digital Power Starter Kit 3 Firmware Documentation", "index.html", [
+  [ "Digital Power Starter Kit 3 Firmware", "index.html", [
     [ "dsPIC33C Digital Power Starter Kit", "index.html#autotoc_md1", [
       [ "Summary", "index.html#autotoc_md2", null ],
       [ "Description", "index.html#autotoc_md3", null ],
@@ -69,11 +69,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "a00350.html",
-"a00399.html#gaf44f0978ee4afa8c9934405d94c4f7a7",
-"a00443.html#gab181fe2593d84efda1009d1ebf98250f",
-"a00523.html#gae104c8e1fd4160f749fefbcf540f5a07",
-"a01390.html",
-"a01586.html#ae142fcfc24877087d89007045ced6563"
+"a00393.html#gabf2ad9b2299924fa6c2a9fb609923d4c",
+"a00413.html#ga406187bfac1f96601580b8dc14afa73d",
+"a00469.html#ga7a34fa9e4da52a8bf6a056323c6c7e11",
+"a00746.html",
+"a01462.html",
+"a01638.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
