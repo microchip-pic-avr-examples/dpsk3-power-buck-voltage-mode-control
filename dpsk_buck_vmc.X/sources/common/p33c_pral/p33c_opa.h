@@ -19,16 +19,19 @@
  * TERMS. 
  */
 
-/**************************************************************************************************
- * @file p33c_opa.h
- * @see  p33c_opa.c
- * @brief Generic Operational Amplifier Driver Module (header file)
- * @details 
+/*@@p33c_opa.h
+ * ************************************************************************************************
+ * Summary:
+ * Generic Operational Amplifier Driver Module (header file)
+ *
+ * Description:
  * This additional header file contains defines for all required bit-settings of all related 
  * special function registers of a peripheral module and/or instance. 
  * This file is an additional header file on top of the generic device header file.
- *	
- *************************************************************************************************/
+ * 
+ * See Also:
+ *	p33c_opa.c
+ * ***********************************************************************************************/
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
@@ -45,7 +48,7 @@
 // GENERIC PDM OP-AMP MODULE SPECIAL FUNCTION REGISTER SET
 #ifndef P33C_OPA_MODULE_s
 
-    struct P33C_OPA_MODULE_s{
+    typedef struct P33C_OPA_MODULE_s{
         union {
             volatile struct tagAMPCON1LBITS bits; // Register bit-field
             volatile uint16_t value; // 16-bit wide register value
@@ -54,8 +57,7 @@
             volatile struct tagAMPCON1HBITS bits; // Register bit-field
             volatile uint16_t value; // 16-bit wide register value
         } AmpCon1H;    // (AMPCON1H) OP-AMP CONTROL 2 REGISTER LOW
-    } __attribute__((packed));
-	typedef struct P33C_OPA_MODULE_s P33C_OPA_MODULE_t; // PDM OP-AMP MODULE REGISTER SET
+    } __attribute__((packed)) P33C_OPA_MODULE_t; // PDM OP-AMP MODULE REGISTER SET
 
 #endif
 
@@ -81,5 +83,4 @@ extern volatile struct P33C_OPA_MODULE_s opaModuleConfigClear;
 extern volatile struct P33C_OPA_MODULE_s opaModuleDefault;
 
 #endif	/* P33C_OPA_SFR_ABSTRACTION_H */
-
-// end of file
+// END OF FILE

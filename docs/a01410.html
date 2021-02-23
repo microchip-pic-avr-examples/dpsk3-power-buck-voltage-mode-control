@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Digital Power Starter Kit 3 Firmware Documentation: FAULT_OBJECT_s Struct Reference</title>
+<title>Digital Power Starter Kit 3 Firmware: FAULT_OBJECT_s Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@
  <tr style="height: 36px;">
   <td id="projectlogo" style="padding-left: 0.2em; vertical-align: middle;"><img alt="Logo" src="microchip-docs.png"/></td>
   <td id="projectalign" style="padding-left: 0.0em;">
-   <div id="projectname" style="color: white; font-size:16px;">Digital Power Starter Kit 3 Firmware Documentation
+   <div id="projectname" style="color: white; font-size:16px;">Digital Power Starter Kit 3 Firmware
    </div>
    <div id="projectbrief" style="color: grey; font-size:12px;">dsPIC33C Buck Converter Voltage Mode Control Example</div>
   </td>
@@ -112,14 +112,16 @@ $(document).ready(function(){initNavTree('a01410.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01409.svg" width="607" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01409.svg" width="607" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for FAULT_OBJECT_s:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a01408.svg" width="607" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a01408.svg" width="607" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -148,24 +150,6 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="a00173_source.html#l00131">131</a> of file <a class="el" href="a00173_source.html">drv_fault_handler.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a5682be08ea825740d924680de9b7af60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5682be08ea825740d924680de9b7af60">&#9670;&nbsp;</a></span>Status</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile struct <a class="el" href="a01390.html">FLT_OBJECT_STATUS_s</a> Status</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Status word of this fault object. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00173_source.html#l00122">122</a> of file <a class="el" href="a00173_source.html">drv_fault_handler.h</a>.</p>
-
-</div>
-</div>
 <a id="a9e9b3f9102ce573dc6ac2e1058140322"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e9b3f9102ce573dc6ac2e1058140322">&#9670;&nbsp;</a></span>Counter</h2>
 
@@ -184,19 +168,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ab5f1eb31220187b74ffb14a15e10ce54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5f1eb31220187b74ffb14a15e10ce54">&#9670;&nbsp;</a></span>SourceObject</h2>
+<a id="af9e053ccdb2ca7c1cff5fcbe4596bf9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e053ccdb2ca7c1cff5fcbe4596bf9c">&#9670;&nbsp;</a></span>RecoveryResponse</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile struct <a class="el" href="a01402.html">FLT_COMPARE_OBJECT_s</a> SourceObject</td>
+          <td class="memname">volatile struct <a class="el" href="a01406.html">FLT_EVENT_RESPONSE_s</a> RecoveryResponse</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Object which should be monitored. </p>
+<p>Settings defining the fault recovery event. </p>
 
 <p class="definition">Definition at line <a class="el" href="a00173_source.html#l00134">134</a> of file <a class="el" href="a00173_source.html">drv_fault_handler.h</a>.</p>
 
@@ -220,6 +204,42 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ab5f1eb31220187b74ffb14a15e10ce54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f1eb31220187b74ffb14a15e10ce54">&#9670;&nbsp;</a></span>SourceObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile struct <a class="el" href="a01402.html">FLT_COMPARE_OBJECT_s</a> SourceObject</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Object which should be monitored. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00173_source.html#l00134">134</a> of file <a class="el" href="a00173_source.html">drv_fault_handler.h</a>.</p>
+
+</div>
+</div>
+<a id="a5682be08ea825740d924680de9b7af60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5682be08ea825740d924680de9b7af60">&#9670;&nbsp;</a></span>Status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile struct <a class="el" href="a01390.html">FLT_OBJECT_STATUS_s</a> Status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Status word of this fault object. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00173_source.html#l00122">122</a> of file <a class="el" href="a00173_source.html">drv_fault_handler.h</a>.</p>
+
+</div>
+</div>
 <a id="aa749f7fba8875502ddb95b0235f7264b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa749f7fba8875502ddb95b0235f7264b">&#9670;&nbsp;</a></span>TripResponse</h2>
 
@@ -233,24 +253,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Settings defining the fault trip event. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00173_source.html#l00134">134</a> of file <a class="el" href="a00173_source.html">drv_fault_handler.h</a>.</p>
-
-</div>
-</div>
-<a id="af9e053ccdb2ca7c1cff5fcbe4596bf9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9e053ccdb2ca7c1cff5fcbe4596bf9c">&#9670;&nbsp;</a></span>RecoveryResponse</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile struct <a class="el" href="a01406.html">FLT_EVENT_RESPONSE_s</a> RecoveryResponse</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Settings defining the fault recovery event. </p>
 
 <p class="definition">Definition at line <a class="el" href="a00173_source.html#l00134">134</a> of file <a class="el" href="a00173_source.html">drv_fault_handler.h</a>.</p>
 

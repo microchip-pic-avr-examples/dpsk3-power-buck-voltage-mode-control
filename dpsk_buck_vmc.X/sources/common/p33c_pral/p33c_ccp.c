@@ -43,11 +43,11 @@ volatile struct P33C_CCP_INSTANCE_SFRSET_s ccpConfigDefault = {
 //    (none)
 
 /*********************************************************************************
- * @fn     volatile struct P33C_CCP_INSTANCE_SFRSET_s* p33c_CcpInstance_GetHandle(volatile uint16_t ccpInstance)
+ * @fn     struct P33C_CCP_INSTANCE_SFRSET_s* p33c_CcpInstance_GetHandle(volatile uint16_t ccpInstance)
  * @ingroup lib-layer-pral-functions-public-ccp
  * @brief  Gets pointer to CCP instance SFR set
- * @param  ccpInstance Index of the Capture/Compare peripheral instance of type unsinged integer
- * @return Pointer to SCCP/MCCP instance special function register data object of type struct P33C_CCP_INSTANCE_SFRSET_s 
+ * @param  uint16_t ccpInstance
+ * @return struct P33C_CCP_INSTANCE_SFRSET_s*: Pointer to CCP instance special function register set object 
  *  
  * @details
  *      This function returns the pointer to a CCP module register set
@@ -69,11 +69,11 @@ volatile struct P33C_CCP_INSTANCE_SFRSET_s* p33c_CcpInstance_GetHandle(volatile 
 }
 
 /*********************************************************************************
- * @fn     volatile struct P33C_CCP_INSTANCE_SFRSET_s p33c_CcpInstance_ConfigRead(volatile uint16_t ccpInstance)
+ * @fn     struct P33C_CCP_INSTANCE_SFRSET_s p33c_CcpInstance_ConfigRead(volatile uint16_t ccpInstance)
  * @ingroup lib-layer-pral-functions-public-ccp
  * @brief  Read the current configuration from the CCP instance registers
- * @param  ccpInstance Index of the Capture/Compare peripheral instance of type unsinged integer
- * @return SCCP/MCCP instance special function register data object of type struct P33C_CCP_INSTANCE_SFRSET_s
+ * @param  uint16_t ccpInstance
+ * @return struct P33C_CCP_INSTANCE_SFRSET_s: SCCP/MCCP instance special function register set object 
  * 
  * @details
  *     This function reads all registers with their current configuration into
@@ -95,11 +95,11 @@ volatile struct P33C_CCP_INSTANCE_SFRSET_s p33c_CcpInstance_ConfigRead(volatile 
 }
 
 /********************************************************************************
- * @fn     volatile uint16_t p33c_CcpInstance_ConfigWrite(volatile uint16_t ccpInstance, volatile struct P33C_CCP_INSTANCE_SFRSET_s ccpConfig)
+ * @fn     uint16_t p33c_CcpInstance_ConfigWrite(volatile uint16_t ccpInstance, volatile struct P33C_CCP_INSTANCE_SFRSET_s ccpConfig)
  * @ingroup lib-layer-pral-functions-public-ccp
  * @brief  Writes a user-defined configuration to the CCP instance registers
- * @param  ccpInstance Index of the Capture/Compare peripheral instance of type unsinged integer
- * @param  ccpConfig SCCP/MCCP instance special function register data object of type struct P33C_CCP_INSTANCE_SFRSET_s
+ * @param  uint16_t ccpInstance
+ * @param  struct P33C_CCP_INSTANCE_SFRSET_s ccpConfig
  * @return 0 = failure, writing to CCP instance was not successful
  * @return 1 = success, writing to CCP instance was successful
  * 

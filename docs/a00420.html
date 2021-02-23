@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Digital Power Starter Kit 3 Firmware Documentation: Public Properties</title>
+<title>Digital Power Starter Kit 3 Firmware: Public Properties</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@
  <tr style="height: 36px;">
   <td id="projectlogo" style="padding-left: 0.2em; vertical-align: middle;"><img alt="Logo" src="microchip-docs.png"/></td>
   <td id="projectalign" style="padding-left: 0.0em;">
-   <div id="projectname" style="color: white; font-size:16px;">Digital Power Starter Kit 3 Firmware Documentation
+   <div id="projectname" style="color: white; font-size:16px;">Digital Power Starter Kit 3 Firmware
    </div>
    <div id="projectbrief" style="color: grey; font-size:12px;">dsPIC33C Buck Converter Voltage Mode Control Example</div>
   </td>
@@ -110,7 +110,8 @@ $(document).ready(function(){initNavTree('a00420.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00420.svg" width="347" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="a00420.svg" width="347" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -132,22 +133,22 @@ Variables</h2></td></tr>
 <p>Public properties of the first application layer task. </p>
 <p>This is the detailed description of public variables, data types, enumerations, defines and macros of the fault monitor application layer. </p>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ga295ec0d409fed7ec6f9104a238c686fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga295ec0d409fed7ec6f9104a238c686fb">&#9670;&nbsp;</a></span>fltobj_BuckUVLO</h2>
+<a id="ga94bfe2ce5dda4f256be991d41bf23514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94bfe2ce5dda4f256be991d41bf23514">&#9670;&nbsp;</a></span>fltobj_BuckOCP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="a01410.html">FAULT_OBJECT_s</a> fltobj_BuckUVLO</td>
+          <td class="memname">struct <a class="el" href="a01410.html">FAULT_OBJECT_s</a> fltobj_BuckOCP</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Under Voltage Lock Out Fault Object. </p>
+<p>Over Current Protection Fault Object. </p>
 <p><br  />
 </p>
-<p>This fault object monitors the input voltage of the power supply scanning for conditions violating the minimum required input voltage level for the specified amount of time. </p>
+<p>This fault object monitors the average output current of the power supply scanning for conditions exceeding the maximum allowed output current level for the specified amount of time. </p>
 
 <p class="definition">Definition at line <a class="el" href="a00161_source.html#l00001">1</a> of file <a class="el" href="a00161_source.html">app_fault_monitor.c</a>.</p>
 
@@ -174,27 +175,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga94bfe2ce5dda4f256be991d41bf23514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94bfe2ce5dda4f256be991d41bf23514">&#9670;&nbsp;</a></span>fltobj_BuckOCP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="a01410.html">FAULT_OBJECT_s</a> fltobj_BuckOCP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Over Current Protection Fault Object. </p>
-<p><br  />
-</p>
-<p>This fault object monitors the average output current of the power supply scanning for conditions exceeding the maximum allowed output current level for the specified amount of time. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00161_source.html#l00001">1</a> of file <a class="el" href="a00161_source.html">app_fault_monitor.c</a>.</p>
-
-</div>
-</div>
 <a id="ga9a42288edd61441b896e9caa0ebd8303"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9a42288edd61441b896e9caa0ebd8303">&#9670;&nbsp;</a></span>fltobj_BuckRegErr</h2>
 
@@ -211,6 +191,27 @@ Variables</h2></td></tr>
 <p><br  />
 </p>
 <p>This fault object monitors the deviation between voltage reference and most recent output voltage of the power supply scanning for conditions where a maximum allowed deviation is exceeded for the specified amount of time. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00161_source.html#l00001">1</a> of file <a class="el" href="a00161_source.html">app_fault_monitor.c</a>.</p>
+
+</div>
+</div>
+<a id="ga295ec0d409fed7ec6f9104a238c686fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga295ec0d409fed7ec6f9104a238c686fb">&#9670;&nbsp;</a></span>fltobj_BuckUVLO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="a01410.html">FAULT_OBJECT_s</a> fltobj_BuckUVLO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Under Voltage Lock Out Fault Object. </p>
+<p><br  />
+</p>
+<p>This fault object monitors the input voltage of the power supply scanning for conditions violating the minimum required input voltage level for the specified amount of time. </p>
 
 <p class="definition">Definition at line <a class="el" href="a00161_source.html#l00001">1</a> of file <a class="el" href="a00161_source.html">app_fault_monitor.c</a>.</p>
 

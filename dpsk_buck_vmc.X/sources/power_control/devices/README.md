@@ -501,6 +501,7 @@ Waiting period while the converter is kept in a enabled state at constant output
 * 03/13/2020 v1.0 (M91406) Initial release
 * 11/02/2020 v2.0 (M91406) Modular state machine with startup sub-states
 * 12/21/2020 v2.1 (M91406) Added current sense calibration function extensions to state machine
+* 02/22/2021 v2.2 (M91406) Modified voltage reference management during startup, ensuring user setting is always loaded correctly before voltage ramp-up
 
 
 ---

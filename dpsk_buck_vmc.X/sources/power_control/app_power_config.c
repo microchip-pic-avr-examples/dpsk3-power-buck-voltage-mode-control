@@ -64,6 +64,7 @@ volatile uint16_t appPowerSupply_ConverterObjectInitialize(void)
     buck.sw_node[0].gpio_instance = BUCK_PWM_GPIO_INSTANCE;
     buck.sw_node[0].gpio_high = BUCK_PWM_GPIO_PORT_PINH;
     buck.sw_node[0].gpio_low = BUCK_PWM_GPIO_PORT_PINL;
+    buck.sw_node[0].swap_outputs = BUCK_PWM_OUTPUT_SWAP;
     buck.sw_node[0].master_period_enable = false;
     buck.sw_node[0].sync_drive = true; 
     buck.sw_node[0].period = BUCK_PWM_PERIOD;
@@ -90,7 +91,7 @@ volatile uint16_t appPowerSupply_ConverterObjectInitialize(void)
     buck.gpio.PowerGood.port = PWRGOOD_PORT; // Number of the GPIO port (0=A, 1=B, 2=C, etc.)
     buck.gpio.PowerGood.pin = PWRGOOD_PIN; // Number of the GPIO port pin
     buck.gpio.PowerGood.polarity = 0;   // This pin is ACTIVE HIGH (only required if io_type = OUTPUT)
-    buck.gpio.PowerGood.io_type = 0;    // This pin is configured as OUTPUT
+    buck.gpio.PowerGood.io_type = 0;    // This pin is configured as Push-Pull OUTPUT
     
     // ~~~ POWER GOOD OUTPUT END ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -285,7 +286,7 @@ volatile uint16_t appPowerSupply_ControllerInitialize(void)
     buck.v_loop.controller->Ports.AltTarget.NormFactor = 0x7FFF; // Secondary control output normalization factor fractional 
     
     // Configure controller control ports
-    buck.v_loop.controller->Ports.ptrControlReference = &buck.set_values.v_ref; // Set pointer to Reference
+    buck.v_loop.controller->Ports.ptrControlReference = &buck.v_loop.reference; // Set pointer to Reference
     
     // Data Input/Output Limit Configuration
     buck.v_loop.controller->Limits.MinOutput = buck.v_loop.minimum;
@@ -296,7 +297,7 @@ volatile uint16_t appPowerSupply_ControllerInitialize(void)
     // ADC Trigger Control Configuration
     buck.v_loop.controller->ADCTriggerControl.ptrADCTriggerARegister = &BUCK_VOUT_ADCTRIG;
     buck.v_loop.controller->ADCTriggerControl.ADCTriggerAOffset = buck.v_loop.trigger_offset;
-    buck.v_loop.controller->ADCTriggerControl.ptrADCTriggerBRegister = &BUCK_VIN_ADCTRIG;
+    buck.v_loop.controller->ADCTriggerControl.ptrADCTriggerBRegister = &BUCK_ISNS_ADCTRIG;
     buck.v_loop.controller->ADCTriggerControl.ADCTriggerBOffset = BUCK_ISNS_ADC_TRGDLY; 
     
     // Data Provider Configuration
