@@ -119,10 +119,10 @@ When pressing the on-board button `USER` for one second or longer, the screen ca
 
 By pressing the `Buck Load` on-board push button on the right edge of the board for ***less*** than a second, changes the static load level in four steps:
 
-- no LED:  0% (0 mA)
-- 1 LEDs: 10% (100 mA)
-- 2 LEDs: 25% (500 mA)
-- 3 LEDs: 50% (1000 mA)
+- no LED:   0% (0 mA)
+- 1 LEDs:  10% (100 mA)
+- 2 LEDs:  50% (500 mA)
+- 3 LEDs: 100% (1000 mA)
 
 (value accuracy +/- 10%)
 
@@ -133,9 +133,9 @@ By pressing the `Buck Load` on-board push button on the right edge of the board 
 
 Pressing the `Buck Load` on-board push button again for ***less*** than a second, the step load can be adjusted between
 
-- 10% to 25% Load (100-500 mA)
-- 10% to 50% Load (100-1000 mA)
-- 25% to 50% Load (500-1000 mA)
+- 10% to 50% Load (100-500 mA)
+- 10% to 100% Load (100-1000 mA)
+- 50% to 100% Load (500-1000 mA)
 
 (value accuracy +/- 10%)
 
