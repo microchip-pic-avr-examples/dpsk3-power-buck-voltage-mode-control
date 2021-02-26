@@ -1,7 +1,5 @@
 var a00475 =
 [
-    [ "BuckConverterRampUpSubStateMachine", "a00475.html#gad90aaba79b75de05468a961a39c9c018", null ],
-    [ "BuckConverterStateMachine", "a00475.html#ga34e9e076d0bb91ad7b4ce328bc03dfee", null ],
-    [ "BuckRampUpSubStateList_size", "a00475.html#gaf52bd106cdf677965715261049bbc072", null ],
-    [ "BuckStateList_size", "a00475.html#ga908907079f862f9793ac00bd89d653ce", null ]
+    [ "adcore_diff_mask", "a00475.html#ga215a815cad00177161895a74f526cfc1", null ],
+    [ "adcore_mask", "a00475.html#ga8312ee90c2e73a1ad6bc8b0e545368c2", null ]
 ];

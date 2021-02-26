@@ -1,7 +1,6 @@
 var a00418 =
 [
-    [ "Public Functions", "a00419.html", "a00419" ],
-    [ "Public Properties", "a00420.html", "a00420" ],
-    [ "Private Functions", "a00421.html", "a00421" ],
-    [ "Private Properties", "a00422.html", null ]
+    [ "CPU_RESET_TRIGGER_LOW_BIT_MASK", "a00418.html#ga93ad1697099d89b5b6ea6b7b5ff04b6b", null ],
+    [ "FAULT_OBJECT_CPU_RESET_TRIGGER_BIT_MASK", "a00418.html#ga3334fbf341916cab77073f953283999b", null ],
+    [ "TRAP_DMA_SUPPORT", "a00418.html#ga393990cf5c03424419ade69a25bac06a", null ]
 ];

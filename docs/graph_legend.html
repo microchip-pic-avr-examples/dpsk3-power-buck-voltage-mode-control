@@ -22,6 +22,13 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="mchp.css" rel="stylesheet" type="text/css"/>
 <link href="mchp_theme.css" rel="stylesheet" type="text/css"/>
@@ -136,7 +143,7 @@ $(document).ready(function(){initNavTree('graph_legend.html',''); initResizable(
 <div class="line">    Used *m_usedClass;</div>
 <div class="line">};</div>
 </div><!-- fragment --><p> This will result in the following graph:</p>
-<center><iframe scrolling="no" frameborder="0" src="graph_legend.svg" width="676" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe> </center><p>The boxes in the above graph have the following meaning: </p>
+<center>[!-- SVG 0 --] </center><p>The boxes in the above graph have the following meaning: </p>
 <ul>
 <li>
 A filled gray box represents the struct or class for which the graph is generated. </li>

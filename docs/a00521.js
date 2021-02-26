@@ -1,5 +1,8 @@
 var a00521 =
 [
-    [ "sysAclk_Initialize", "a00521.html#ga3f3f3c22c6c2b95518271fae8f58b03f", null ],
-    [ "sysFosc_Initialize", "a00521.html#ga40d0188218fbc4f682cbddffff9e1269", null ]
+    [ "Peripheral Register Abstraction Layer (PRAL) Library", "a00338.html", "a00338" ],
+    [ "Fault Handler Library", "a00411.html", "a00411" ],
+    [ "LC-Display Library", "a00427.html", "a00427" ],
+    [ "Buck Converter Library", "a00448.html", "a00448" ],
+    [ "Push-Button Library", "a00497.html", "a00497" ]
 ];

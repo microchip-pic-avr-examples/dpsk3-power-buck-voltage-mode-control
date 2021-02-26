@@ -1,8 +1,7 @@
 var a00436 =
 [
-    [ "LCD_s", "a01470.html", [
-      [ "enabled", "a01470.html#a085e9fc0863cee4864cf51dcfe1e32df", null ],
-      [ "refresh", "a01470.html#adc2298ffda0c853e699e6da9098f82ae", null ],
-      [ "screen", "a01470.html#aea467a9fc04f0771215b952d26bc4392", null ]
-    ] ]
+    [ "LCD_CS_nSELECTED", "a00436.html#ga54b80311c5aac1052284a52ad5824fc9", null ],
+    [ "LCD_CS_SELECTED", "a00436.html#gab579f782fdb44ac74dd8c2681503f71a", null ],
+    [ "LCD_RS_COMMAND", "a00436.html#ga6f7c55d9c8246fa677ae8d8d2c88df9e", null ],
+    [ "LCD_RS_DATA", "a00436.html#ga9993ce43cdf8d8cb194c2e23c3d2698d", null ]
 ];

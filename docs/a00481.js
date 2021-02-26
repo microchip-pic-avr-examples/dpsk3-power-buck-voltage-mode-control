@@ -1,5 +1,7 @@
 var a00481 =
 [
-    [ "BuckConverterSpecialFunctions", "a00481.html#ga3ae32433f160a13731fbe7e18e62d621", null ],
-    [ "calib_cs", "a00481.html#ga619f44e96a83b8c723f1e8e24e5c7442", null ]
+    [ "buckDacInstanceConfig", "a00481.html#gab25d1a3889c78f4213ba349255d346c7", null ],
+    [ "buckDacModuleConfig", "a00481.html#gac26c1311a275f3076a198a09227e8147", null ],
+    [ "buckPwmGeneratorConfig", "a00481.html#gae543c7d56ffc52bf7455d0a58d5ad70b", null ],
+    [ "buckPwmModuleConfig", "a00481.html#ga2d420ce844bd8e8c1f81d173d3c3b549", null ]
 ];

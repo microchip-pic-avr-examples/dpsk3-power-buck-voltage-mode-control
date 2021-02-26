@@ -1,14 +1,17 @@
 var a00473 =
 [
-    [ "State_Error", "a00473.html#ga47717557335be2404de223606ccf829a", null ],
-    [ "State_Initialize", "a00473.html#ga4e1d6ade6dbba61649d1e427bf2c8a4a", null ],
-    [ "State_Online", "a00473.html#gabe3da533896385a0914427027b61a87d", null ],
-    [ "State_RampUp", "a00473.html#gaae585944f715e190bcb32fea42fcf346", null ],
-    [ "State_Reset", "a00473.html#ga493de6f9e2dbb41c2ff6ac082bcf36a1", null ],
-    [ "State_Standby", "a00473.html#ga0663613cf4f11bade4c79d11aed30bfd", null ],
-    [ "SubState_IRampUp", "a00473.html#gac217b97e2348a000fdd66fd828174487", null ],
-    [ "SubState_PowerGoodDelay", "a00473.html#ga93fe19751c6c8aebbbcc69e9fed56bb7", null ],
-    [ "SubState_PowerOnDelay", "a00473.html#gaf92eb22ba325d7b88ad487acff641ce5", null ],
-    [ "SubState_PrepareVRampUp", "a00473.html#ga58cd10d1ea69eca5fb4b702ff42659fb", null ],
-    [ "SubState_VRampUp", "a00473.html#ga11e02a3b52d1d9731ad6eff8f804d841", null ]
+    [ "buckADC_ChannelInitialize", "a00473.html#gac2bfd6c3ccd9ec11b8e91322ea9354d2", null ],
+    [ "buckADC_ModuleInitialize", "a00473.html#ga44f537d9ad5dcb0e744480802cfbf170", null ],
+    [ "buckADC_Start", "a00473.html#gab089e35bcd5d68072aa53298ee276959", null ],
+    [ "buckGPIO_Clear", "a00473.html#ga7f1d554e08d756b8677b572216908a3a", null ],
+    [ "buckGPIO_GetPinState", "a00473.html#ga8e2253c136f05033e774d09032b283a1", null ],
+    [ "buckGPIO_Initialize", "a00473.html#gac7e5924475733c189b2318844ae01844", null ],
+    [ "buckGPIO_PrivateInitialize", "a00473.html#ga3d3f91c0e40884874e7df3a67fff23f3", null ],
+    [ "buckGPIO_Set", "a00473.html#gad8cb8e5226f7c1d109cd0dc42e45be9f", null ],
+    [ "buckPWM_ChannelInitialize", "a00473.html#ga45a54def97cc67eb8d36e22a3867d95f", null ],
+    [ "buckPWM_ModuleInitialize", "a00473.html#ga6d12fd9e2f1d4f01ec6db21454693863", null ],
+    [ "buckPWM_Resume", "a00473.html#ga2d46a45c20d84e1a7c6cfd5743b68c47", null ],
+    [ "buckPWM_Start", "a00473.html#gac63073d04bc35c0cce5df47ea0d33165", null ],
+    [ "buckPWM_Stop", "a00473.html#gab2905ddac9f94bf8bfa203444c0d3691", null ],
+    [ "buckPWM_Suspend", "a00473.html#gae63dbb1465ca458b8b7f6733a30f7d0b", null ]
 ];
