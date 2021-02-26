@@ -1,6 +1,8 @@
 var a00424 =
 [
-    [ "DefaultTrapHandler", "a00424.html#ga0250f20caa12da59ca4f42c807cff152", null ],
-    [ "drv_FaultHandler_CheckObject", "a00424.html#gaa513cf169f787b56d70d5d793d2367f7", null ],
-    [ "drv_TrapHandler_SoftTrapsInitialize", "a00424.html#ga3b96ecc924931497bada0ea1957f0634", null ]
+    [ "LCD_s", "a01458.html", [
+      [ "enabled", "a01458.html#a085e9fc0863cee4864cf51dcfe1e32df", null ],
+      [ "refresh", "a01458.html#adc2298ffda0c853e699e6da9098f82ae", null ],
+      [ "screen", "a01458.html#aea467a9fc04f0771215b952d26bc4392", null ]
+    ] ]
 ];

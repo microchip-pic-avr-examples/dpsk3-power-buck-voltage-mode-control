@@ -22,6 +22,13 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="mchp.css" rel="stylesheet" type="text/css"/>
 <link href="mchp_theme.css" rel="stylesheet" type="text/css"/>
@@ -99,7 +106,7 @@ $(document).ready(function(){initNavTree('a00473.html',''); initResizable(); });
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Functions<div class="ingroups"><a class="el" href="a00533.html">Device Driver Library Layer</a> &raquo; <a class="el" href="a00460.html">Buck Converter Library</a> &raquo; <a class="el" href="a00471.html">Buck Converter Library Modules</a> &raquo; <a class="el" href="a00472.html">Buck Converter State Machine</a></div></div>  </div>
+<div class="title">Functions<div class="ingroups"><a class="el" href="a00521.html">Device Driver Library Layer</a> &raquo; <a class="el" href="a00448.html">Buck Converter Library</a> &raquo; <a class="el" href="a00459.html">Buck Converter Library Modules</a> &raquo; <a class="el" href="a00472.html">Buck Peripheral Configuration</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -110,427 +117,685 @@ $(document).ready(function(){initNavTree('a00473.html',''); initResizable(); });
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00473.svg" width="283" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><!-- SVG 0 -->
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4e1d6ade6dbba61649d1e427bf2c8a4a"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga4e1d6ade6dbba61649d1e427bf2c8a4a">State_Initialize</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga4e1d6ade6dbba61649d1e427bf2c8a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function resets the counters and conditional flag bits.  <a href="a00473.html#ga4e1d6ade6dbba61649d1e427bf2c8a4a">More...</a><br /></td></tr>
-<tr class="separator:ga4e1d6ade6dbba61649d1e427bf2c8a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga493de6f9e2dbb41c2ff6ac082bcf36a1"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga493de6f9e2dbb41c2ff6ac082bcf36a1">State_Reset</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga493de6f9e2dbb41c2ff6ac082bcf36a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function resets the buck control operation by re-initiating the control mode, references and status bits.  <a href="a00473.html#ga493de6f9e2dbb41c2ff6ac082bcf36a1">More...</a><br /></td></tr>
-<tr class="separator:ga493de6f9e2dbb41c2ff6ac082bcf36a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0663613cf4f11bade4c79d11aed30bfd"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga0663613cf4f11bade4c79d11aed30bfd">State_Standby</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga0663613cf4f11bade4c79d11aed30bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function waits until all start-up conditions are met.  <a href="a00473.html#ga0663613cf4f11bade4c79d11aed30bfd">More...</a><br /></td></tr>
-<tr class="separator:ga0663613cf4f11bade4c79d11aed30bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae585944f715e190bcb32fea42fcf346"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gaae585944f715e190bcb32fea42fcf346">State_RampUp</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:gaae585944f715e190bcb32fea42fcf346"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function ramps up the voltage/input to its nominal value.  <a href="a00473.html#gaae585944f715e190bcb32fea42fcf346">More...</a><br /></td></tr>
-<tr class="separator:gaae585944f715e190bcb32fea42fcf346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe3da533896385a0914427027b61a87d"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gabe3da533896385a0914427027b61a87d">State_Online</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:gabe3da533896385a0914427027b61a87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function tunes the controller reference to the new user control reference level.  <a href="a00473.html#gabe3da533896385a0914427027b61a87d">More...</a><br /></td></tr>
-<tr class="separator:gabe3da533896385a0914427027b61a87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47717557335be2404de223606ccf829a"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga47717557335be2404de223606ccf829a">State_Error</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga47717557335be2404de223606ccf829a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this function is called, the state machine is reset to INITIALIZE (URL=<a class="el" href="a00473.html#ga4e1d6ade6dbba61649d1e427bf2c8a4a">State_Initialize</a>).  <a href="a00473.html#ga47717557335be2404de223606ccf829a">More...</a><br /></td></tr>
-<tr class="separator:ga47717557335be2404de223606ccf829a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf92eb22ba325d7b88ad487acff641ce5"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gaf92eb22ba325d7b88ad487acff641ce5">SubState_PowerOnDelay</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:gaf92eb22ba325d7b88ad487acff641ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function delays the startup until the Power-on Delay has expired.  <a href="a00473.html#gaf92eb22ba325d7b88ad487acff641ce5">More...</a><br /></td></tr>
-<tr class="separator:gaf92eb22ba325d7b88ad487acff641ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58cd10d1ea69eca5fb4b702ff42659fb"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga58cd10d1ea69eca5fb4b702ff42659fb">SubState_PrepareVRampUp</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga58cd10d1ea69eca5fb4b702ff42659fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calculate and pre-charge PWM outputs with ideal duty cycle.  <a href="a00473.html#ga58cd10d1ea69eca5fb4b702ff42659fb">More...</a><br /></td></tr>
-<tr class="separator:ga58cd10d1ea69eca5fb4b702ff42659fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11e02a3b52d1d9731ad6eff8f804d841"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga11e02a3b52d1d9731ad6eff8f804d841">SubState_VRampUp</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga11e02a3b52d1d9731ad6eff8f804d841"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function ramps up the output voltage to its nominal regulation point.  <a href="a00473.html#ga11e02a3b52d1d9731ad6eff8f804d841">More...</a><br /></td></tr>
-<tr class="separator:ga11e02a3b52d1d9731ad6eff8f804d841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac217b97e2348a000fdd66fd828174487"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gac217b97e2348a000fdd66fd828174487">SubState_IRampUp</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:gac217b97e2348a000fdd66fd828174487"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is for the average current mode control where the output current is ramped up to nominal current.  <a href="a00473.html#gac217b97e2348a000fdd66fd828174487">More...</a><br /></td></tr>
-<tr class="separator:gac217b97e2348a000fdd66fd828174487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93fe19751c6c8aebbbcc69e9fed56bb7"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga93fe19751c6c8aebbbcc69e9fed56bb7">SubState_PowerGoodDelay</a> (volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga93fe19751c6c8aebbbcc69e9fed56bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">In this function, a counter is incremented until the power good delay has expired.  <a href="a00473.html#ga93fe19751c6c8aebbbcc69e9fed56bb7">More...</a><br /></td></tr>
-<tr class="separator:ga93fe19751c6c8aebbbcc69e9fed56bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d12fd9e2f1d4f01ec6db21454693863"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga6d12fd9e2f1d4f01ec6db21454693863">buckPWM_ModuleInitialize</a> (volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
+<tr class="memdesc:ga6d12fd9e2f1d4f01ec6db21454693863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the buck PWM module by resetting its registers to default.  <a href="a00473.html#ga6d12fd9e2f1d4f01ec6db21454693863">More...</a><br /></td></tr>
+<tr class="separator:ga6d12fd9e2f1d4f01ec6db21454693863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45a54def97cc67eb8d36e22a3867d95f"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga45a54def97cc67eb8d36e22a3867d95f">buckPWM_ChannelInitialize</a> (volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
+<tr class="memdesc:ga45a54def97cc67eb8d36e22a3867d95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the output pins for the PWM output and the default buck PWM settings.  <a href="a00473.html#ga45a54def97cc67eb8d36e22a3867d95f">More...</a><br /></td></tr>
+<tr class="separator:ga45a54def97cc67eb8d36e22a3867d95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac63073d04bc35c0cce5df47ea0d33165"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gac63073d04bc35c0cce5df47ea0d33165">buckPWM_Start</a> (volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
+<tr class="memdesc:gac63073d04bc35c0cce5df47ea0d33165"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function enables the buck PWM operation.  <a href="a00473.html#gac63073d04bc35c0cce5df47ea0d33165">More...</a><br /></td></tr>
+<tr class="separator:gac63073d04bc35c0cce5df47ea0d33165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2905ddac9f94bf8bfa203444c0d3691"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gab2905ddac9f94bf8bfa203444c0d3691">buckPWM_Stop</a> (volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
+<tr class="memdesc:gab2905ddac9f94bf8bfa203444c0d3691"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function stops the buck PWM output.  <a href="a00473.html#gab2905ddac9f94bf8bfa203444c0d3691">More...</a><br /></td></tr>
+<tr class="separator:gab2905ddac9f94bf8bfa203444c0d3691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae63dbb1465ca458b8b7f6733a30f7d0b"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gae63dbb1465ca458b8b7f6733a30f7d0b">buckPWM_Suspend</a> (volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
+<tr class="memdesc:gae63dbb1465ca458b8b7f6733a30f7d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function disables the PWM generator IOs.  <a href="a00473.html#gae63dbb1465ca458b8b7f6733a30f7d0b">More...</a><br /></td></tr>
+<tr class="separator:gae63dbb1465ca458b8b7f6733a30f7d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d46a45c20d84e1a7c6cfd5743b68c47"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga2d46a45c20d84e1a7c6cfd5743b68c47">buckPWM_Resume</a> (volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
+<tr class="memdesc:ga2d46a45c20d84e1a7c6cfd5743b68c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function resumes the buck PWM operation.  <a href="a00473.html#ga2d46a45c20d84e1a7c6cfd5743b68c47">More...</a><br /></td></tr>
+<tr class="separator:ga2d46a45c20d84e1a7c6cfd5743b68c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44f537d9ad5dcb0e744480802cfbf170"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga44f537d9ad5dcb0e744480802cfbf170">buckADC_ModuleInitialize</a> (void)</td></tr>
+<tr class="memdesc:ga44f537d9ad5dcb0e744480802cfbf170"><td class="mdescLeft">&#160;</td><td class="mdescRight">This fucntion initializes the buck by resetting all its registers to default.  <a href="a00473.html#ga44f537d9ad5dcb0e744480802cfbf170">More...</a><br /></td></tr>
+<tr class="separator:ga44f537d9ad5dcb0e744480802cfbf170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2bfd6c3ccd9ec11b8e91322ea9354d2"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gac2bfd6c3ccd9ec11b8e91322ea9354d2">buckADC_ChannelInitialize</a> (volatile struct <a class="el" href="a01526.html">BUCK_ADC_INPUT_SETTINGS_s</a> *adcInstance)</td></tr>
+<tr class="memdesc:gac2bfd6c3ccd9ec11b8e91322ea9354d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the settings for the ADC channel.  <a href="a00473.html#gac2bfd6c3ccd9ec11b8e91322ea9354d2">More...</a><br /></td></tr>
+<tr class="separator:gac2bfd6c3ccd9ec11b8e91322ea9354d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab089e35bcd5d68072aa53298ee276959"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gab089e35bcd5d68072aa53298ee276959">buckADC_Start</a> (void)</td></tr>
+<tr class="memdesc:gab089e35bcd5d68072aa53298ee276959"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function enables the ADC module and starts the ADC cores analog inputs for the required input signals.  <a href="a00473.html#gab089e35bcd5d68072aa53298ee276959">More...</a><br /></td></tr>
+<tr class="separator:gab089e35bcd5d68072aa53298ee276959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8cb8e5226f7c1d109cd0dc42e45be9f"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gad8cb8e5226f7c1d109cd0dc42e45be9f">buckGPIO_Set</a> (volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *buckGPIOInstance)</td></tr>
+<tr class="memdesc:gad8cb8e5226f7c1d109cd0dc42e45be9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the selected general purpose input/ouput pins.  <a href="a00473.html#gad8cb8e5226f7c1d109cd0dc42e45be9f">More...</a><br /></td></tr>
+<tr class="separator:gad8cb8e5226f7c1d109cd0dc42e45be9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f1d554e08d756b8677b572216908a3a"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga7f1d554e08d756b8677b572216908a3a">buckGPIO_Clear</a> (volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *buckGPIOInstance)</td></tr>
+<tr class="memdesc:ga7f1d554e08d756b8677b572216908a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function clears the selected general purpose input/output pin.  <a href="a00473.html#ga7f1d554e08d756b8677b572216908a3a">More...</a><br /></td></tr>
+<tr class="separator:ga7f1d554e08d756b8677b572216908a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e2253c136f05033e774d09032b283a1"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga8e2253c136f05033e774d09032b283a1">buckGPIO_GetPinState</a> (volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *buckGPIOInstance)</td></tr>
+<tr class="memdesc:ga8e2253c136f05033e774d09032b283a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function gets the state of the selected pin.  <a href="a00473.html#ga8e2253c136f05033e774d09032b283a1">More...</a><br /></td></tr>
+<tr class="separator:ga8e2253c136f05033e774d09032b283a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7e5924475733c189b2318844ae01844"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#gac7e5924475733c189b2318844ae01844">buckGPIO_Initialize</a> (volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
+<tr class="memdesc:gac7e5924475733c189b2318844ae01844"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function initializes the buck input pins.  <a href="a00473.html#gac7e5924475733c189b2318844ae01844">More...</a><br /></td></tr>
+<tr class="separator:gac7e5924475733c189b2318844ae01844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d3f91c0e40884874e7df3a67fff23f3"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00473.html#ga3d3f91c0e40884874e7df3a67fff23f3">buckGPIO_PrivateInitialize</a> (volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *buckGPIOInstance)</td></tr>
+<tr class="memdesc:ga3d3f91c0e40884874e7df3a67fff23f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets the pin as input or output.  <a href="a00473.html#ga3d3f91c0e40884874e7df3a67fff23f3">More...</a><br /></td></tr>
+<tr class="separator:ga3d3f91c0e40884874e7df3a67fff23f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions of the second library layer. </p>
-<p>This is the detailed description of functions of the state machine of the buck converter device driver library. </p>
+<p>This is the detailed description of public functions of the peripheral configuration module of the buck converter device driver library. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga47717557335be2404de223606ccf829a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga47717557335be2404de223606ccf829a">&#9670;&nbsp;</a></span>State_Error()</h2>
+<a id="gac2bfd6c3ccd9ec11b8e91322ea9354d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2bfd6c3ccd9ec11b8e91322ea9354d2">&#9670;&nbsp;</a></span>buckADC_ChannelInitialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t State_Error </td>
+          <td class="memname">uint16_t buckADC_ChannelInitialize </td>
           <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01526.html">BUCK_ADC_INPUT_SETTINGS_s</a> *&#160;</td>
+          <td class="paramname"><em>adcInstance</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>If this function is called, the state machine is reset to INITIALIZE (URL=<a class="el" href="a00473.html#ga4e1d6ade6dbba61649d1e427bf2c8a4a">State_Initialize</a>). </p>
+<p>This function initializes the settings for the ADC channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+    <tr><td class="paramname">adcInstance</td><td>Pointer to an ADC Input Configuration data object of type struct <a class="el" href="a01526.html" title="ADC input channel configuration.">BUCK_ADC_INPUT_SETTINGS_s</a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>This function is a default anchor in case task list index #0 is ever called. This is the equivalent of a switch case "default". </p>
+<p>This function initializes the ADC input registers based on the selected ADC channel. This function sets the input channel trigger source, input mode, and the ADC core connected to the selected channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00251_source.html#l00363">363</a> of file <a class="el" href="a00251_source.html">dev_buck_opstates.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00528">528</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="a00473_ga47717557335be2404de223606ccf829a_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga4e1d6ade6dbba61649d1e427bf2c8a4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e1d6ade6dbba61649d1e427bf2c8a4a">&#9670;&nbsp;</a></span>State_Initialize()</h2>
+<a id="ga44f537d9ad5dcb0e744480802cfbf170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44f537d9ad5dcb0e744480802cfbf170">&#9670;&nbsp;</a></span>buckADC_ModuleInitialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t State_Initialize </td>
+          <td class="memname">uint16_t buckADC_ModuleInitialize </td>
           <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function resets the counters and conditional flag bits. </p>
+<p>This fucntion initializes the buck by resetting all its registers to default. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>If the controller has not been run yet, the POWER ON and POWER GOOD delay counters are reset and all conditional flag bits are cleared. Status of power source, ADC and current sensor calibration have to be set during runtime by system check routines. </p>
+<p>The ADC initialization covers basic configurations like data format, clock sources and dividers as well as specific configurations for ADC cores. These settings are general, basic settings and not related to specific analog inputs. The standard configuration set here sets up the ADC module and ADC cores for maximum performance. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00251_source.html#l00054">54</a> of file <a class="el" href="a00251_source.html">dev_buck_opstates.c</a>.</p>
-
-</div>
-</div>
-<a id="gabe3da533896385a0914427027b61a87d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe3da533896385a0914427027b61a87d">&#9670;&nbsp;</a></span>State_Online()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t State_Online </td>
-          <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function tunes the controller reference to the new user control reference level. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>After soft-start and when state POWER_GOOD_DELAY has expired, the converter enters normal operation.</p>
-<p>During normal operation the state machine scans the user reference setting. Once a change between the user reference setting and the most recent controller reference has been detected, the state machine will tune the controller reference to the new user control reference level in incremental steps, applying the same ramp slope as during soft-start.</p>
-<p>While ramping the output voltage up or down, the BUSY bit will be set and any new changes to the reference will be ignored until the ramp up/down is complete. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00251_source.html#l00315">315</a> of file <a class="el" href="a00251_source.html">dev_buck_opstates.c</a>.</p>
-
-</div>
-</div>
-<a id="gaae585944f715e190bcb32fea42fcf346"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaae585944f715e190bcb32fea42fcf346">&#9670;&nbsp;</a></span>State_RampUp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t State_RampUp </td>
-          <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function ramps up the voltage/input to its nominal value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 = BUCK_OPSRET_REPEAT </dd>
-<dd>
-1 = BUCK_OPSRET_COMPLETE </dd>
-<dd>
-2 = BUCK_OPSRET_REPEAT</dd></dl>
-<p>After a successful state machine Standby, the state machine executes the RAMPUP mode. In this mode, the voltage/current ramps up to the nominal value. <br  />
- </p>
-
-<p class="definition">Definition at line <a class="el" href="a00251_source.html#l00225">225</a> of file <a class="el" href="a00251_source.html">dev_buck_opstates.c</a>.</p>
-
-</div>
-</div>
-<a id="ga493de6f9e2dbb41c2ff6ac082bcf36a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga493de6f9e2dbb41c2ff6ac082bcf36a1">&#9670;&nbsp;</a></span>State_Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t State_Reset </td>
-          <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function resets the buck control operation by re-initiating the control mode, references and status bits. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>After successful initialization or after an externally triggered state machine reset, the state machine returns to this RESET mode, re-initiating control mode, references and status bits before switching further into STANDBY mode. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00251_source.html#l00104">104</a> of file <a class="el" href="a00251_source.html">dev_buck_opstates.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00429">429</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="a00473_ga493de6f9e2dbb41c2ff6ac082bcf36a1_cgraph.svg" width="100%" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 2 -->
 </div>
 </div>
 
 </div>
 </div>
-<a id="ga0663613cf4f11bade4c79d11aed30bfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0663613cf4f11bade4c79d11aed30bfd">&#9670;&nbsp;</a></span>State_Standby()</h2>
+<a id="gab089e35bcd5d68072aa53298ee276959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab089e35bcd5d68072aa53298ee276959">&#9670;&nbsp;</a></span>buckADC_Start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t State_Standby </td>
+          <td class="memname">uint16_t buckADC_Start </td>
           <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function waits until all start-up conditions are met. </p>
+<p>This function enables the ADC module and starts the ADC cores analog inputs for the required input signals. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>After a successful state machine reset, the state machine waits in <br  />
- STANDBY mode until all conditional flag bits are set/cleared allowing <br  />
- the converter to run. </p>
+<p>This function enables the ADC module, powers-up and enables the ADC cores used and waits until ADC cores are ready. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00251_source.html#l00159">159</a> of file <a class="el" href="a00251_source.html">dev_buck_opstates.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00622">622</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00473_ga0663613cf4f11bade4c79d11aed30bfd_cgraph.svg" width="346" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><!-- SVG 3 -->
 </div>
 </div>
 
 </div>
 </div>
-<a id="gac217b97e2348a000fdd66fd828174487"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac217b97e2348a000fdd66fd828174487">&#9670;&nbsp;</a></span>SubState_IRampUp()</h2>
+<a id="ga7f1d554e08d756b8677b572216908a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f1d554e08d756b8677b572216908a3a">&#9670;&nbsp;</a></span>buckGPIO_Clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t SubState_IRampUp </td>
+          <td class="memname">uint16_t buckGPIO_Clear </td>
           <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *&#160;</td>
+          <td class="paramname"><em>buckGPIOInstance</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function is for the average current mode control where the output current is ramped up to nominal current. </p>
+<p>This function clears the selected general purpose input/output pin. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+    <tr><td class="paramname">buckGPIOInstance</td><td>Pointer to a GPIO instance data object of type struct <a class="el" href="a01534.html" title="GPIO instance of the converter control GPIO.">BUCK_GPIO_INSTANCE_s</a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>This phase of the soft-start ramp is only executed in average current mode and will only take effect when the declared current limit is hit before the nominal voltage regulation point. In this case the outer voltage loop will clamp the current reference value and the state will be switched to IRampUp, where the clamping value of the voltage loop output is ramped up to the declared maximum current reference value. This additional state allows powering up the power converter against highly capacitive loads preventing overshoots caused by down-stream capacitor inrush currents or when the converter is used as battery charger, where this state will tune into the constant current charging mode. </p>
+<p>This function captures the pin that the use desired to be put in inactive state. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00313">313</a> of file <a class="el" href="a00269_source.html">dev_buck_substates.c</a>.</p>
-
-</div>
-</div>
-<a id="ga93fe19751c6c8aebbbcc69e9fed56bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga93fe19751c6c8aebbbcc69e9fed56bb7">&#9670;&nbsp;</a></span>SubState_PowerGoodDelay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t SubState_PowerGoodDelay </td>
-          <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>In this function, a counter is incremented until the power good delay has expired. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>In this phase of the soft-start procedure a counter is incremented until the power good delay has expired before the soft-start process is marked as COMPLETED. If option for driving a user-defined general purpose output (PG output) is enabled in proprietary user code, this pin will be set automatically. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00363">363</a> of file <a class="el" href="a00269_source.html">dev_buck_substates.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00688">688</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00473_ga93fe19751c6c8aebbbcc69e9fed56bb7_cgraph.svg" width="600" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><!-- SVG 4 -->
 </div>
 </div>
-
-</div>
-</div>
-<a id="gaf92eb22ba325d7b88ad487acff641ce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf92eb22ba325d7b88ad487acff641ce5">&#9670;&nbsp;</a></span>SubState_PowerOnDelay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t SubState_PowerOnDelay </td>
-          <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function delays the startup until the Power-on Delay has expired. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>After the converter has been cleared to get started, the power-on delay counter is incremented until the defined power-on delay period has expired. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00050">50</a> of file <a class="el" href="a00269_source.html">dev_buck_substates.c</a>.</p>
-
-</div>
-</div>
-<a id="ga58cd10d1ea69eca5fb4b702ff42659fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58cd10d1ea69eca5fb4b702ff42659fb">&#9670;&nbsp;</a></span>SubState_PrepareVRampUp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t SubState_PrepareVRampUp </td>
-          <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function calculate and pre-charge PWM outputs with ideal duty cycle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>After the POWER ON DELAY has expired, the ramp up starting point is determined <br  />
- by measuring the input and output voltage and calculates the ideal duty ratio of the PWM. This value is then programmed into the PWM module duty cycle register and is also used to pre-charge the control loop output history. In addition the measured output voltage also set as reference to ensure the loop starts without jerks and jumps.</p>
-<p>When voltage mode control is enabled, the voltage loop control history is charged, when average current mode control is enabled, the current loop control history is charged. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00095">95</a> of file <a class="el" href="a00269_source.html">dev_buck_substates.c</a>.</p>
-
-</div>
-</div>
-<a id="ga11e02a3b52d1d9731ad6eff8f804d841"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga11e02a3b52d1d9731ad6eff8f804d841">&#9670;&nbsp;</a></span>SubState_VRampUp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t SubState_VRampUp </td>
-          <td>(</td>
-          <td class="paramtype">volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *&#160;</td>
-          <td class="paramname"><em>buckInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function ramps up the output voltage to its nominal regulation point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
-<p>This is the essential step in which the output voltage is ramped up by incrementing the outer control loop reference. In voltage mode the output <br  />
- voltage will ramp up to the nominal regulation point. In average current mode the inner loop will limit the voltage as soon as the current reference limit is hit and the output is switched to constant current mode. </p>
-
-<p class="definition">Definition at line <a class="el" href="a00269_source.html#l00230">230</a> of file <a class="el" href="a00269_source.html">dev_buck_substates.c</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00473_ga11e02a3b52d1d9731ad6eff8f804d841_cgraph.svg" width="599" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><!-- SVG 5 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga8e2253c136f05033e774d09032b283a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e2253c136f05033e774d09032b283a1">&#9670;&nbsp;</a></span>buckGPIO_GetPinState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool buckGPIO_GetPinState </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *&#160;</td>
+          <td class="paramname"><em>buckGPIOInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function gets the state of the selected pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckGPIOInstance</td><td>Pointer to a GPIO instance data object of type struct <a class="el" href="a01534.html" title="GPIO instance of the converter control GPIO.">BUCK_GPIO_INSTANCE_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function captures the selected pin and read its state. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00723">723</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 6 -->
+</div>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 7 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="gac7e5924475733c189b2318844ae01844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7e5924475733c189b2318844ae01844">&#9670;&nbsp;</a></span>buckGPIO_Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckGPIO_Initialize </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *&#160;</td>
+          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function initializes the buck input pins. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01542.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function initializes the ENABLE input pin and POWER GOOD output pin using the buck GPIO_PrivateInitialize (URL = <a class="el" href="a00473.html#ga3d3f91c0e40884874e7df3a67fff23f3">buckGPIO_PrivateInitialize</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00754">754</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 8 -->
+</div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 9 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga3d3f91c0e40884874e7df3a67fff23f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d3f91c0e40884874e7df3a67fff23f3">&#9670;&nbsp;</a></span>buckGPIO_PrivateInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint16_t buckGPIO_PrivateInitialize </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *&#160;</td>
+          <td class="paramname"><em>buckGPIOInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the pin as input or output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckGPIOInstance</td><td>Pointer to a GPIO instance data object of type struct <a class="el" href="a01534.html" title="GPIO instance of the converter control GPIO.">BUCK_GPIO_INSTANCE_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function captures the user selected pin then set the pin to inactive and set it as digital input or output pin. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00786">786</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 10 -->
+</div>
+</div>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 11 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="gad8cb8e5226f7c1d109cd0dc42e45be9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8cb8e5226f7c1d109cd0dc42e45be9f">&#9670;&nbsp;</a></span>buckGPIO_Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckGPIO_Set </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01534.html">BUCK_GPIO_INSTANCE_s</a> *&#160;</td>
+          <td class="paramname"><em>buckGPIOInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function sets the selected general purpose input/ouput pins. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckGPIOInstance</td><td>Pointer to a GPIO instance data object of type struct <a class="el" href="a01534.html" title="GPIO instance of the converter control GPIO.">BUCK_GPIO_INSTANCE_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function captures the user selected pin to be activated through LAT register. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00653">653</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 12 -->
+</div>
+</div>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 13 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga45a54def97cc67eb8d36e22a3867d95f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45a54def97cc67eb8d36e22a3867d95f">&#9670;&nbsp;</a></span>buckPWM_ChannelInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckPWM_ChannelInitialize </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *&#160;</td>
+          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function initializes the output pins for the PWM output and the default buck PWM settings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01542.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function initializes the buck PWM channel with default values for maximum performance.</p>
+<p>Default configuration:</p><ul>
+<li>selected PWM outputs are enabled</li>
+<li>PWM timing settings are loaded (i.e., duty cycle, period, dead-times, blanking)</li>
+<li>PWM synchronization is established </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00110">110</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 14 -->
+</div>
+</div>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 15 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga6d12fd9e2f1d4f01ec6db21454693863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d12fd9e2f1d4f01ec6db21454693863">&#9670;&nbsp;</a></span>buckPWM_ModuleInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckPWM_ModuleInitialize </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *&#160;</td>
+          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the buck PWM module by resetting its registers to default. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01542.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function initializes the buck PWM module base registers with default values for maximum performance.</p>
+<p>Default configuration:</p><ul>
+<li>all PWM peripheral power is enabled</li>
+<li>all PWM generators are disabled</li>
+<li>default PWM Module configurations are written in buck PWM module base registers </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00054">54</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 16 -->
+</div>
+</div>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 17 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ga2d46a45c20d84e1a7c6cfd5743b68c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d46a45c20d84e1a7c6cfd5743b68c47">&#9670;&nbsp;</a></span>buckPWM_Resume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckPWM_Resume </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *&#160;</td>
+          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function resumes the buck PWM operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01542.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>THis function updates the PWM timing bit and the PWM output pins are enabled. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00369">369</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 18 -->
+</div>
+</div>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 19 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="gac63073d04bc35c0cce5df47ea0d33165"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac63073d04bc35c0cce5df47ea0d33165">&#9670;&nbsp;</a></span>buckPWM_Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckPWM_Start </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *&#160;</td>
+          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function enables the buck PWM operation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01542.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function starts the operation of the buck PWM by enabling the PWM generator and its output pins. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00212">212</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 20 -->
+</div>
+</div>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 21 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="gab2905ddac9f94bf8bfa203444c0d3691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2905ddac9f94bf8bfa203444c0d3691">&#9670;&nbsp;</a></span>buckPWM_Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckPWM_Stop </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *&#160;</td>
+          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function stops the buck PWM output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01542.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function shuts down the PWM output by disabling all PWM channels of the recent buck converter object, overriding the output pins and resetting the buck PWM duty cycle to its minimum duty ratio.</p>
+<p>If the Power Good output is enabled, this output pin will also be reset. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00281">281</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 22 -->
+</div>
+</div>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 23 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="gae63dbb1465ca458b8b7f6733a30f7d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae63dbb1465ca458b8b7f6733a30f7d0b">&#9670;&nbsp;</a></span>buckPWM_Suspend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buckPWM_Suspend </td>
+          <td>(</td>
+          <td class="paramtype">volatile struct <a class="el" href="a01542.html">BUCK_CONVERTER_s</a> *&#160;</td>
+          <td class="paramname"><em>buckInstance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function disables the PWM generator IOs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buckInstance</td><td>Pointer to a Buck Converter data object of type struct <a class="el" href="a01542.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned integer (0=failure, 1=success)</dd></dl>
+<p>This function suspends the buck PWM operation by disabling all PWM outputs of the recent buck converter configuration, overriding the PWM output pins and setting the duty cycle to 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00245_source.html#l00327">327</a> of file <a class="el" href="a00245_source.html">dev_buck_pconfig.c</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 24 -->
+</div>
+</div>
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><!-- SVG 25 -->
 </div>
 </div>
 

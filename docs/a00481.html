@@ -22,6 +22,13 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="mchp.css" rel="stylesheet" type="text/css"/>
 <link href="mchp_theme.css" rel="stylesheet" type="text/css"/>
@@ -99,94 +106,145 @@ $(document).ready(function(){initNavTree('a00481.html',''); initResizable(); });
   <div class="summary">
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">Variables &amp; Constants<div class="ingroups"><a class="el" href="a00533.html">Device Driver Library Layer</a> &raquo; <a class="el" href="a00460.html">Buck Converter Library</a> &raquo; <a class="el" href="a00471.html">Buck Converter Library Modules</a> &raquo; <a class="el" href="a00478.html">Buck Special Functions</a> &raquo; <a class="el" href="a00480.html">Properties</a></div></div>  </div>
+<div class="title">Variables &amp; Constants<div class="ingroups"><a class="el" href="a00521.html">Device Driver Library Layer</a> &raquo; <a class="el" href="a00448.html">Buck Converter Library</a> &raquo; <a class="el" href="a00459.html">Buck Converter Library Modules</a> &raquo; <a class="el" href="a00478.html">Buck Peripheral Templates</a> &raquo; <a class="el" href="a00480.html">Properties</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>List of variables of the Special Function state machine extensions.  
-<a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Variables &amp; Constants:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="a00481.svg" width="292" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><!-- SVG 0 -->
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga619f44e96a83b8c723f1e8e24e5c7442"><td class="memItemLeft" align="right" valign="top">volatile struct CS_CALIBRATION_s&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00481.html#ga619f44e96a83b8c723f1e8e24e5c7442">calib_cs</a> [<a class="el" href="a00466.html#ga74df4d33c3d762495bc67b88bb6aa524">BUCK_MPHASE_COUNT</a>]</td></tr>
-<tr class="memdesc:ga619f44e96a83b8c723f1e8e24e5c7442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of current sense calibration data objects of type CS_CALIBRATION_t.  <a href="a00481.html#ga619f44e96a83b8c723f1e8e24e5c7442">More...</a><br /></td></tr>
-<tr class="separator:ga619f44e96a83b8c723f1e8e24e5c7442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ae32433f160a13731fbe7e18e62d621"><td class="memItemLeft" align="right" valign="top">volatile uint16_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00481.html#ga3ae32433f160a13731fbe7e18e62d621">BuckConverterSpecialFunctions</a> [])(volatile struct <a class="el" href="a01554.html">BUCK_CONVERTER_s</a> *buckInstance)</td></tr>
-<tr class="memdesc:ga3ae32433f160a13731fbe7e18e62d621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer list of all special function sub-state functions.  <a href="a00481.html#ga3ae32433f160a13731fbe7e18e62d621">More...</a><br /></td></tr>
-<tr class="separator:ga3ae32433f160a13731fbe7e18e62d621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac26c1311a275f3076a198a09227e8147"><td class="memItemLeft" align="right" valign="top">volatile struct <a class="el" href="a00706.html">P33C_DAC_MODULE_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00481.html#gac26c1311a275f3076a198a09227e8147">buckDacModuleConfig</a></td></tr>
+<tr class="memdesc:gac26c1311a275f3076a198a09227e8147"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC module default configuration.  <a href="a00481.html#gac26c1311a275f3076a198a09227e8147">More...</a><br /></td></tr>
+<tr class="separator:gac26c1311a275f3076a198a09227e8147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab25d1a3889c78f4213ba349255d346c7"><td class="memItemLeft" align="right" valign="top">volatile struct <a class="el" href="a00734.html">P33C_DAC_INSTANCE_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00481.html#gab25d1a3889c78f4213ba349255d346c7">buckDacInstanceConfig</a></td></tr>
+<tr class="memdesc:gab25d1a3889c78f4213ba349255d346c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC generator default configuration.  <a href="a00481.html#gab25d1a3889c78f4213ba349255d346c7">More...</a><br /></td></tr>
+<tr class="separator:gab25d1a3889c78f4213ba349255d346c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d420ce844bd8e8c1f81d173d3c3b549"><td class="memItemLeft" align="right" valign="top">volatile struct <a class="el" href="a00910.html">P33C_PWM_MODULE_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00481.html#ga2d420ce844bd8e8c1f81d173d3c3b549">buckPwmModuleConfig</a></td></tr>
+<tr class="memdesc:ga2d420ce844bd8e8c1f81d173d3c3b549"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM module default configuration.  <a href="a00481.html#ga2d420ce844bd8e8c1f81d173d3c3b549">More...</a><br /></td></tr>
+<tr class="separator:ga2d420ce844bd8e8c1f81d173d3c3b549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae543c7d56ffc52bf7455d0a58d5ad70b"><td class="memItemLeft" align="right" valign="top">volatile struct <a class="el" href="a01094.html">P33C_PWM_GENERATOR_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00481.html#gae543c7d56ffc52bf7455d0a58d5ad70b">buckPwmGeneratorConfig</a></td></tr>
+<tr class="memdesc:gae543c7d56ffc52bf7455d0a58d5ad70b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM generator default configuration.  <a href="a00481.html#gae543c7d56ffc52bf7455d0a58d5ad70b">More...</a><br /></td></tr>
+<tr class="separator:gae543c7d56ffc52bf7455d0a58d5ad70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>List of variables of the Special Function state machine extensions. </p>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ga3ae32433f160a13731fbe7e18e62d621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3ae32433f160a13731fbe7e18e62d621">&#9670;&nbsp;</a></span>BuckConverterSpecialFunctions</h2>
+<a id="gab25d1a3889c78f4213ba349255d346c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab25d1a3889c78f4213ba349255d346c7">&#9670;&nbsp;</a></span>buckDacInstanceConfig</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BuckConverterSpecialFunctions</td>
+          <td class="memname">buckDacInstanceConfig</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= </div>
 <div class="line">{</div>
-<div class="line">    <a class="code" href="a00479.html#ga337549d1d76534d9b092d7c8bdaf686a">CurrentSenseOffsetCalibration</a> </div>
+<div class="line">    .DACxCONL.value = <a class="code" href="a00483.html#ga4040cf3dc25dad9e41a1da945b07d296">REG_DACxCONL</a>, </div>
+<div class="line">    .DACxCONH.value = <a class="code" href="a00483.html#gaa6e98055bc0d35732906fb5b0785b30a">REG_DACxCONH</a>, </div>
+<div class="line">    .DACxDATL.value = 0x0000,       </div>
+<div class="line">    .DACxDATH.value = 0x0000,       </div>
+<div class="line">    .SLPxCONL.value = <a class="code" href="a00483.html#ga512689ef8611be9275733eb81f13707f">REG_SLPxCONL</a>, </div>
+<div class="line">    .SLPxCONH.value = <a class="code" href="a00483.html#ga91d0af2b9336b872cb114c3b58efa261">REG_SLPxCONH</a>, </div>
+<div class="line">    .SLPxDAT.value = 0x0000         </div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Function pointer list of all special function sub-state functions. </p>
-<p>The function pointer list BuckConverterSpecialFunctions[] is providing public access to a list of functions serving special purposes supporting specific power converter configuration options. Each function mapped into this array as function pointer is a self-contained, independent sub-state, which can be called from any level of the main state machine being treated like a common sub-state.</p>
-<p>Each function needs to be called by handing over a parameter of type</p>
-<ul>
-<li>struct <a class="el" href="a01554.html" title="BUCK control &amp; monitoring data structure.">BUCK_CONVERTER_s</a></li>
-</ul>
-<p>Each function returns of type unsigned integer:</p>
-<ul>
-<li>0 = BUCK_OPSRET_ERROR</li>
-<li>1 = BUCK_OPSRET_COMPLETE</li>
-<li>2 = BUCK_OPSRET_REPEAT</li>
-</ul>
-<p><b>Recently available Special Functions&lt;b&gt;<br  />
-</b></p>
-<p><b></p><ul>
-<li>Current Sense Feedback Offset Calibration </li>
-</ul>
-<p></b></p>
+<p>DAC generator default configuration. </p>
 
-<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00088">88</a> of file <a class="el" href="a00263_source.html">dev_buck_special_functions.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="a00275_source.html#l00001">1</a> of file <a class="el" href="a00275_source.html">dev_buck_ptemp_dac.c</a>.</p>
 
 </div>
 </div>
-<a id="ga619f44e96a83b8c723f1e8e24e5c7442"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga619f44e96a83b8c723f1e8e24e5c7442">&#9670;&nbsp;</a></span>calib_cs</h2>
+<a id="gac26c1311a275f3076a198a09227e8147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac26c1311a275f3076a198a09227e8147">&#9670;&nbsp;</a></span>buckDacModuleConfig</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct CS_CALIBRATION_s calib_cs[<a class="el" href="a00466.html#ga74df4d33c3d762495bc67b88bb6aa524">BUCK_MPHASE_COUNT</a>]</td>
+          <td class="memname">buckDacModuleConfig</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= </div>
+<div class="line">{</div>
+<div class="line">    .DacModuleCtrl1L.value = 0x0000, </div>
+<div class="line">    .DacModuleCtrl2L.value = 0x0000, </div>
+<div class="line">    .DacModuleCtrl2H.value = 0x0000  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>DAC module default configuration. </p>
 
-<p>Array of current sense calibration data objects of type CS_CALIBRATION_t. </p>
-<p>The current sense feedback offset calibration requires a data space to accumulate and average the static feedback offset value. The final result is written to the feedback channel configuration of the buck converter data object, hence, the CS_CALIBRATION_s data structure used for the current sense feedback offset calibration is kept private and inaccessible from external firmware modules. This variable is declared as array reserving a data set for each current sense feedback channel. </p>
+<p class="definition">Definition at line <a class="el" href="a00275_source.html#l00001">1</a> of file <a class="el" href="a00275_source.html">dev_buck_ptemp_dac.c</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="a00263_source.html#l00001">1</a> of file <a class="el" href="a00263_source.html">dev_buck_special_functions.c</a>.</p>
+</div>
+</div>
+<a id="gae543c7d56ffc52bf7455d0a58d5ad70b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae543c7d56ffc52bf7455d0a58d5ad70b">&#9670;&nbsp;</a></span>buckPwmGeneratorConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">buckPwmGeneratorConfig</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PWM generator default configuration. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00281_source.html#l00001">1</a> of file <a class="el" href="a00281_source.html">dev_buck_ptemp_pwm.c</a>.</p>
+
+</div>
+</div>
+<a id="ga2d420ce844bd8e8c1f81d173d3c3b549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d420ce844bd8e8c1f81d173d3c3b549">&#9670;&nbsp;</a></span>buckPwmModuleConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">buckPwmModuleConfig</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PWM module default configuration. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00281_source.html#l00001">1</a> of file <a class="el" href="a00281_source.html">dev_buck_ptemp_pwm.c</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa00479_html_ga337549d1d76534d9b092d7c8bdaf686a"><div class="ttname"><a href="a00479.html#ga337549d1d76534d9b092d7c8bdaf686a">CurrentSenseOffsetCalibration</a></div><div class="ttdeci">volatile uint16_t CurrentSenseOffsetCalibration(volatile struct BUCK_CONVERTER_s *buckInstance)</div><div class="ttdoc">Performs an offset calibration of the current sense feedback signal(s)</div><div class="ttdef"><b>Definition:</b> <a href="a00263_source.html#l00178">dev_buck_special_functions.c:178</a></div></div>
+<div class="ttc" id="aa00483_html_gaa6e98055bc0d35732906fb5b0785b30a"><div class="ttname"><a href="a00483.html#gaa6e98055bc0d35732906fb5b0785b30a">REG_DACxCONH</a></div><div class="ttdeci">#define REG_DACxCONH</div><div class="ttdoc">DACxCONH: DACx CONTROL REGISTER LOW.</div><div class="ttdef"><b>Definition:</b> <a href="a00278_source.html#l00098">dev_buck_ptemp_dac.h:98</a></div></div>
+<div class="ttc" id="aa00483_html_ga91d0af2b9336b872cb114c3b58efa261"><div class="ttname"><a href="a00483.html#ga91d0af2b9336b872cb114c3b58efa261">REG_SLPxCONH</a></div><div class="ttdeci">#define REG_SLPxCONH</div><div class="ttdoc">SLPxCONH: DACx SLOPE CONTROL REGISTER LOW.</div><div class="ttdef"><b>Definition:</b> <a href="a00278_source.html#l00153">dev_buck_ptemp_dac.h:153</a></div></div>
+<div class="ttc" id="aa00483_html_ga512689ef8611be9275733eb81f13707f"><div class="ttname"><a href="a00483.html#ga512689ef8611be9275733eb81f13707f">REG_SLPxCONL</a></div><div class="ttdeci">#define REG_SLPxCONL</div><div class="ttdoc">SLPxCONL: DACx SLOPE CONTROL REGISTER LOW.</div><div class="ttdef"><b>Definition:</b> <a href="a00278_source.html#l00127">dev_buck_ptemp_dac.h:127</a></div></div>
+<div class="ttc" id="aa00483_html_ga4040cf3dc25dad9e41a1da945b07d296"><div class="ttname"><a href="a00483.html#ga4040cf3dc25dad9e41a1da945b07d296">REG_DACxCONL</a></div><div class="ttdeci">#define REG_DACxCONL</div><div class="ttdoc">DACxCONL: DACx CONTROL REGISTER LOW.</div><div class="ttdef"><b>Definition:</b> <a href="a00278_source.html#l00072">dev_buck_ptemp_dac.h:72</a></div></div>
 <!-- HTML footer for doxygen 1.8.20-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
