@@ -1,6 +1,7 @@
 var a00515 =
 [
-    [ "Initializing Essential Chip Resources", "a00519.html", "a00519" ],
-    [ "Initializing Hardware-Specific Chip Resources", "a00524.html", "a00524" ],
-    [ "Initializing Firmware Tasks", "a00528.html", "a00528" ]
+    [ "Data Objects", "a00516.html", "a00516" ],
+    [ "Data Object Members", "a00517.html", "a00517" ],
+    [ "Defines & Macros", "a00518.html", "a00518" ],
+    [ "Variables", "a00519.html", "a00519" ]
 ];

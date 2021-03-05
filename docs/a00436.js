@@ -1,8 +1,7 @@
 var a00436 =
 [
-    [ "LCD_s", "a01470.html", [
-      [ "enabled", "a01470.html#a085e9fc0863cee4864cf51dcfe1e32df", null ],
-      [ "refresh", "a01470.html#adc2298ffda0c853e699e6da9098f82ae", null ],
-      [ "screen", "a01470.html#aea467a9fc04f0771215b952d26bc4392", null ]
-    ] ]
+    [ "fltobj_BuckOCP", "a00436.html#ga94bfe2ce5dda4f256be991d41bf23514", null ],
+    [ "fltobj_BuckOVLO", "a00436.html#ga96ccc7eb53ed10fa68fbe5aae4793d32", null ],
+    [ "fltobj_BuckRegErr", "a00436.html#ga9a42288edd61441b896e9caa0ebd8303", null ],
+    [ "fltobj_BuckUVLO", "a00436.html#ga295ec0d409fed7ec6f9104a238c686fb", null ]
 ];

@@ -1,4 +1,6 @@
 var a00483 =
 [
-    [ "CS_CALIB_STEPS", "a00483.html#gac3e84f17fbb5a9d23a0e089b210cb080", null ]
+    [ "Variables & Constants", "a00484.html", null ],
+    [ "Data Types", "a00485.html", "a00485" ],
+    [ "Defines and Macros", "a00486.html", null ]
 ];

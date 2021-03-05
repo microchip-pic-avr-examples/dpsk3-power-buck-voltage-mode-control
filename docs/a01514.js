@@ -1,7 +1,7 @@
 var a01514 =
 [
-    [ "i_ramp", "a01514.html#ae64b27b0365bdd8e7a3d6e91f2d2b72a", null ],
-    [ "power_good_delay", "a01514.html#a591c3581328cc22ca1fcf04fbe179d6f", null ],
-    [ "power_on_delay", "a01514.html#abbb9b45a6b559e827a494e57415a5e40", null ],
-    [ "v_ramp", "a01514.html#aaebcce978f474595f71be18ed850adb6", null ]
+    [ "bits", "a01514.html#aa07db595f2d408f4dbc4d3c401d2b6f8", null ],
+    [ "opstate_id", "a01514.html#a9b9c59079d9b7f6ccbe8e83fa7f23d18", null ],
+    [ "substate_id", "a01514.html#a5fdd0244512bf8d99ecfb02ee0fd4b8e", null ],
+    [ "value", "a01514.html#ac394992c7d47027da1de259f501bff0e", null ]
 ];

@@ -1,6 +1,4 @@
-<map id="Buck Converter State Machine" name="Buck Converter State Machine">
-<area shape="rect" id="node1" href="$a00474.html" title="Properties of the second library layer." alt="" coords="400,5,481,31"/>
-<area shape="rect" id="node2" href="$a00471.html" title=" " alt="" coords="5,23,159,63"/>
-<area shape="rect" id="node4" title="Description of the Buck Converter Library State Machine library module." alt="" coords="207,23,352,63"/>
-<area shape="rect" id="node3" href="$a00473.html" title="Functions of the second library layer." alt="" coords="401,55,480,80"/>
+<map id="Public Properties" name="Public Properties">
+<area shape="rect" id="node1" href="$a00470.html" title=" " alt="" coords="5,5,176,45"/>
+<area shape="rect" id="node2" title="Public properties of the application layer of the power control task." alt="" coords="224,13,345,38"/>
 </map>

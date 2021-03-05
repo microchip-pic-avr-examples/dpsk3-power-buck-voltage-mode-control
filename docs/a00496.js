@@ -1,6 +1,6 @@
 var a00496 =
 [
-    [ "Functions", "a00497.html", "a00497" ],
-    [ "Objects", "a00498.html", "a00498" ],
-    [ "Properties", "a00499.html", "a00499" ]
+    [ "Variables & Constants", "a00497.html", "a00497" ],
+    [ "Data Types", "a00498.html", "a00498" ],
+    [ "Defines and Macros", "a00499.html", "a00499" ]
 ];

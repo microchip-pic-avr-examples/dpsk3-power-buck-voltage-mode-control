@@ -1,5 +1,4 @@
-<map id="BUCK_CONVERTER_STARTUP_s" name="BUCK_CONVERTER_STARTUP_s">
-<area shape="rect" id="node1" title="Power Converter Startup Timing Settings." alt="" coords="5,263,231,384"/>
-<area shape="rect" id="node3" href="$a01510.html" title="Generic power controller startup period settings." alt="" coords="28,432,208,568"/>
-<area shape="rect" id="node2" href="$a01554.html" title="BUCK control &amp; monitoring data structure." alt="" coords="39,5,197,215"/>
+<map id="BUCK_STATE_ID_s" name="BUCK_STATE_ID_s">
+<area shape="rect" id="node1" title="data structure for the buck statement ID for sub&#45;operating and operating states" alt="" coords="15,263,154,384"/>
+<area shape="rect" id="node2" href="$a01570.html" title="BUCK control &amp; monitoring data structure." alt="" coords="5,5,164,215"/>
 </map>
