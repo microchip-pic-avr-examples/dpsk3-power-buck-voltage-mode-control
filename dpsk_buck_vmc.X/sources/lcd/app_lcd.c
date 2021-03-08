@@ -185,8 +185,8 @@ volatile uint16_t appLCD_Execute(void)
                 dev_Lcd_WriteStringXY(4, 1, "(LA)");
         }
 
+        // Trigger LCD Refresh
         lcd.refresh = LCD_REFRESH;
-        
         lcd_cnt = 0; // Reset internal interval counter
     }
     
