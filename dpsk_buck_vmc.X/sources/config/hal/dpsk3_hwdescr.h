@@ -909,8 +909,8 @@
 #define BOOST_NO_OF_PHASES              1U ///< Number of power converter phases of this design
 
 #define BOOST_SWITCHING_FREQUENCY       (float)500.0e+3 ///< Fixed Switching frequency in [Hz]
-#define BOOST_PWM_DUTY_CYCLE_MIN        (float)  0.040  ///< Minimum on/off-time ratio (duty ratio) in [%]
-#define BOOST_PWM_DUTY_CYCLE_MAX        (float)  0.850  ///< Maximum on/off-time ratio (duty ratio) in [%]
+#define BOOST_PWM_DUTY_CYCLE_MIN        (float)  0.030  ///< Minimum on/off-time ratio (duty ratio) in [%]
+#define BOOST_PWM_DUTY_CYCLE_MAX        (float)  0.900  ///< Maximum on/off-time ratio (duty ratio) in [%]
 #define BOOST_LEADING_EDGE_BLANKING     (float)120.0e-9 ///< Leading Edge Blanking period in [sec]
 #define BOOST_DEAD_TIME_LEADING_EDGE    (float)  0.0e-9 ///< Leading Edge Dead Time delay in [sec]
 #define BOOST_DEAD_TIME_FALLING_EDGE    (float)  0.0e-9 ///< Falling Edge Dead Time delay in [sec]
@@ -1482,9 +1482,9 @@
 #define BOOST_OVLO_TRIP_DELAY       (float) 5e-3   ///< over voltage lock out trip delay in [sec]
 #define BOOST_OVLO_RECOVERY_DELAY   (float) 500e-3 ///< over voltage lock out recovery delay in [sec]
 #define BOOST_REGERR_TRIP_DELAY     (float) 25e-3  ///< regulation error trip delay in [sec]
-#define BOOST_REGERR_RECOVERY_DELAY (float) 500e-3 ///< regulation error recovery delay in [sec]
+#define BOOST_REGERR_RECOVERY_DELAY (float)2000e-3 ///< regulation error recovery delay in [sec]
 #define BOOST_OCP_TRIP_DELAY        (float) 2e-3   ///< over current proection trip delay in [sec]
-#define BOOST_OCP_RECOVERY_DELAY    (float) 500e-3 ///< over current proection recovery delay in [sec]
+#define BOOST_OCP_RECOVERY_DELAY    (float)2000e-3 ///< over current proection recovery delay in [sec]
 
 #define BOOST_FAULT_RESTART_CYCLES  10  ///< Maximum number of restart cycles: Fault state will be latched until CPU reset or power cycle
 
