@@ -54,6 +54,7 @@ volatile uint16_t appLED_Execute(void)
 {
     volatile uint16_t retval = 1;
 
+    // Change LED toggle frequency when power supply is in fault state
     if (buck.status.bits.fault_active)
         debug_led.period = TGL_INTERVAL_ERR;
     else
