@@ -44,6 +44,7 @@
 #include "led/app_led.h"
 #include "lcd/app_lcd.h"
 
+#define FIRMWARE_VERSION_STRING "v1.1.0"
 
 #endif	/* APPLICATION_GLOBALS_HEADER_H */
 
