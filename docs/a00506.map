@@ -1,4 +1,6 @@
-<map id="Public Properties" name="Public Properties">
-<area shape="rect" id="node1" href="$a00504.html" title=" " alt="" coords="5,5,168,45"/>
-<area shape="rect" id="node2" title="Public properties of the application layer of the push button task." alt="" coords="216,13,337,38"/>
+<map id="Buck Peripheral Templates" name="Buck Peripheral Templates">
+<area shape="rect" id="node1" href="$a00508.html" title="Properties of the second library layer." alt="" coords="433,5,515,31"/>
+<area shape="rect" id="node2" href="$a00507.html" title="Functions of the second library layer." alt="" coords="435,55,513,80"/>
+<area shape="rect" id="node3" href="$a00487.html" title=" " alt="" coords="5,23,159,63"/>
+<area shape="rect" id="node4" title=" " alt="" coords="207,31,385,56"/>
 </map>

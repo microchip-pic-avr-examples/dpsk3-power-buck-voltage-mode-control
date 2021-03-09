@@ -1,4 +1,4 @@
-<map id="Functions" name="Functions">
-<area shape="rect" id="node1" title="Functions of the second library layer." alt="" coords="199,13,277,38"/>
-<area shape="rect" id="node2" href="$a00472.html" title="Description of the Buck Converter Library State Machine library module." alt="" coords="5,5,151,45"/>
+<map id="Events and Interrupts" name="Events and Interrupts">
+<area shape="rect" id="node1" href="$a00470.html" title=" " alt="" coords="5,5,176,45"/>
+<area shape="rect" id="node2" title="Public events of the application layer of the power control task." alt="" coords="224,13,368,38"/>
 </map>

@@ -1,4 +1,11 @@
 var a00428 =
 [
-    [ "traplog", "a00428.html#ga952a98e41cf813dc50567ad60b3e860c", null ]
+    [ "_BUCK_VLOOP_Interrupt", "a00428.html#ga4d26e0585523e4ab162ca9868517b878", null ],
+    [ "_BUCK_VLOOP_ISR_IE", "a00428.html#ga203d0dc5a0b331f39f7ed672d7fc7b31", null ],
+    [ "_BUCK_VLOOP_ISR_IF", "a00428.html#ga86a33b4bdcca00d9c177cbcba36fe05b", null ],
+    [ "_BUCK_VLOOP_ISR_IP", "a00428.html#gac652105fed34fa1602688a30bbd8b227", null ],
+    [ "BUCK_VOUT_ISR_PRIORITY", "a00428.html#ga21c69aa2132f7c8296cf4a558144472d", null ],
+    [ "BUCK_VOUT_TRIG_ADC", "a00428.html#gaa46c260ebaea7e59a41e0c02c09b7012", null ],
+    [ "BUCK_VOUT_TRIG_PWM", "a00428.html#ga0cfa7f19452962e44f33d62da824775d", null ],
+    [ "BUCK_VOUT_TRIGGER_MODE", "a00428.html#ga753fe8fc858101ec0f3de3dbd5632929", null ]
 ];

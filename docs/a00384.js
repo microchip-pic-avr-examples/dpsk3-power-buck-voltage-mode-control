@@ -1,13 +1,9 @@
 var a00384 =
 [
-    [ "BOOST_CHARGEUP_PERIOD", "a00384.html#ga54fa6c219dce9de5f816617ce4716b35", null ],
-    [ "BOOST_CHARGEUP_TIMEOUT", "a00384.html#gae3597efdac20bf9aee16420f6f6d8be4", null ],
-    [ "BOOST_IRAMP_PERIOD", "a00384.html#ga37bef3bc61987dfa7912227dcd2e8475", null ],
-    [ "BOOST_POWER_GOOD_DELAY", "a00384.html#ga8a44fb1bbfee2714f51174f5ec741c01", null ],
-    [ "BOOST_POWER_ON_DELAY", "a00384.html#ga0c3f62393119606cf410bc110c3485c1", null ],
-    [ "BOOST_VRAMP_PERIOD", "a00384.html#ga96ef5acd0b4aa670827cb7b418fee8a9", null ],
-    [ "BUCK_IRAMP_PERIOD", "a00384.html#ga97ee7cbed4a1ed9ebae5c8576d292103", null ],
-    [ "BUCK_POWER_GOOD_DELAY", "a00384.html#ga4cf9c52e0a9c20641018ebdd2679f3c1", null ],
-    [ "BUCK_POWER_ON_DELAY", "a00384.html#ga4308ebf74c3332bd1edfdb6952629eaa", null ],
-    [ "BUCK_VRAMP_PERIOD", "a00384.html#ga5adf9fb727870e57bf02ead3ac7c63ac", null ]
+    [ "BUCK_IRAMP_PER", "a00384.html#ga44bc7c5f1a38be0df740af9e95a57018", null ],
+    [ "BUCK_IREF_STEP", "a00384.html#ga351c39d5d5de144dc1ce695066a52195", null ],
+    [ "BUCK_PGD", "a00384.html#gaf341b4ac7178e33925ead7e712a2583b", null ],
+    [ "BUCK_POD", "a00384.html#gabba7830b442d410bf3c9beb934f024ad", null ],
+    [ "BUCK_VRAMP_PER", "a00384.html#gaa489d990aa6315f54fee41b013f02fd3", null ],
+    [ "BUCK_VREF_STEP", "a00384.html#ga1e532e985e4d737932c504e40950cc37", null ]
 ];

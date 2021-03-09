@@ -1,12 +1,7 @@
 var a01614 =
 [
-    [ "ADCTriggerControl", "a01614.html#aa708a44ef3b59a931f929bc6c72e07fc", null ],
-    [ "Advanced", "a01614.html#ae10c373e7000ff11abbb151f019793e0", null ],
-    [ "DataProviders", "a01614.html#a971260b757f0c8822315d8c82a603142", null ],
-    [ "ExtensionHooks", "a01614.html#a486610694a9aac008ab8c01a0ab88090", null ],
-    [ "Filter", "a01614.html#aa98db9224dce165f72d861acc8558419", null ],
-    [ "GainControl", "a01614.html#a3c9fc0a5e04a384801d066b95dc27f5d", null ],
-    [ "Limits", "a01614.html#a6127947619eb634f1a3c3650529e092c", null ],
-    [ "Ports", "a01614.html#ae834fa9c7338d08d0fa927c901c2503f", null ],
-    [ "status", "a01614.html#a38a4b2427f4b2b06c112385e722e1419", null ]
+    [ "ptrDProvControlError", "a01614.html#a6fa6d9ee16172bc38667fa42c719f3bd", null ],
+    [ "ptrDProvControlInput", "a01614.html#a69148c2c54a089c711120fff25fb7476", null ],
+    [ "ptrDProvControlInputCompensated", "a01614.html#acde428aaa0e39d9f081ca8fba07c0de8", null ],
+    [ "ptrDProvControlOutput", "a01614.html#a01d375870a9b4ee0dcc4fe8d68340906", null ]
 ];

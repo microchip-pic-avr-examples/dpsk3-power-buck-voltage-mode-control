@@ -1,8 +1,7 @@
 var a00454 =
 [
-    [ "Public Functions", "a00455.html", "a00455" ],
-    [ "Public Properties", "a00456.html", "a00456" ],
-    [ "Events and Interrupts", "a00457.html", "a00457" ],
-    [ "Private Functions", "a00458.html", "a00458" ],
-    [ "Private Properties", "a00459.html", null ]
+    [ "LCD_NO_OF_SCREENS", "a00454.html#gac06fc8d6b5342cf40df8e2dfb1d243c8", null ],
+    [ "LCD_REFRESH", "a00454.html#ga8f1bba8cbdf98ed2ac6e10cc8739e56f", null ],
+    [ "LCD_STARTUP", "a00454.html#ga064b0f92f54c1aab1e6731ff24b4cce7", null ],
+    [ "lcd_cnt", "a00454.html#ga6d471f8bdd24d951c86a09ec25f74ef2", null ]
 ];

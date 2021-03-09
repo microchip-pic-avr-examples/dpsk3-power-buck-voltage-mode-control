@@ -1,5 +1,6 @@
 var a00479 =
 [
-    [ "CurrentSenseOffsetCalibration", "a00479.html#ga337549d1d76534d9b092d7c8bdaf686a", null ],
-    [ "drv_BuckConverter_SpecialFunctionExecute", "a00479.html#ga8573aaa632abde3518f8a4448ff73cf7", null ]
+    [ "Variables & Constants", "a00480.html", "a00480" ],
+    [ "Data Types", "a00481.html", "a00481" ],
+    [ "Defines and Macros", "a00482.html", "a00482" ]
 ];

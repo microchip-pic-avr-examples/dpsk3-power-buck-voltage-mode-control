@@ -1,5 +1,6 @@
 var a01550 =
 [
-    [ "EnableInput", "a01550.html#a5eee16f1d70e687a21eb8a5c66d84970", null ],
-    [ "PowerGood", "a01550.html#a734cbe6494d398c56fc249ded4953ea2", null ]
+    [ "factor", "a01550.html#aa9a9b14569ac48dc290e2df6162fb42f", null ],
+    [ "offset", "a01550.html#acba44d6d5a7e55c468854c5487df135c", null ],
+    [ "scaler", "a01550.html#aefa09a3fb2e5db126ad75513aede5fb3", null ]
 ];

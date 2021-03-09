@@ -1,7 +1,13 @@
 var a01542 =
 [
-    [ "ad_isns", "a01542.html#aeb1d3c84c495fdc88de3bd38ec28c139", null ],
-    [ "ad_temp", "a01542.html#ab2720dbc3213b84c266064217dcc53ae", null ],
-    [ "ad_vin", "a01542.html#a5b2dc4caf0113cd2fd142a46750a1b53", null ],
-    [ "ad_vout", "a01542.html#ad59de826ef732a92cec6f00ff84c8d01", null ]
+    [ "controller", "a01542.html#a86e023cf3f4b4255c1b514b6d70ef74f", null ],
+    [ "ctrl_Initialize", "a01542.html#ad9db676a96d1d3f30adf55e6c03fe5e6", null ],
+    [ "ctrl_Precharge", "a01542.html#a1abd824af35613110d119216a9ef6772", null ],
+    [ "ctrl_Reset", "a01542.html#a9de67ce75a551430588dd9954a5692c3", null ],
+    [ "ctrl_Update", "a01542.html#a95eb0e366ec0c0c509d13060e796a7c2", null ],
+    [ "feedback_offset", "a01542.html#a81d3656451b3c24b602aa60c01cd88f6", null ],
+    [ "maximum", "a01542.html#a62d4b288fdba9a5d426a707407903376", null ],
+    [ "minimum", "a01542.html#afc13a108399a3d53cf5993e6fd187f2a", null ],
+    [ "reference", "a01542.html#aad7bda3be2c1e6a89bd7093086bbeec8", null ],
+    [ "trigger_offset", "a01542.html#ad15abe564957bceb1997a22552534262", null ]
 ];
