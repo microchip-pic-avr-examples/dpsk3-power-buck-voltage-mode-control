@@ -29,12 +29,12 @@ var hierarchy =
     ] ],
     [ "LCD_s", "a01486.html", null ],
     [ "NPNZ16b_s", "a01630.html", [
-      [ "NPNZ_ADC_TRGCTRL_s", "a01614.html", null ],
-      [ "NPNZ_DATA_PROVIDERS_s", "a01618.html", null ],
-      [ "NPNZ_EXTENSION_HOOKS_s", "a01622.html", null ],
+      [ "NPNZ_ADC_TRGCTRL_s", "a01610.html", null ],
+      [ "NPNZ_DATA_PROVIDERS_s", "a01614.html", null ],
+      [ "NPNZ_EXTENSION_HOOKS_s", "a01618.html", null ],
       [ "NPNZ_FILTER_PARAMS_s", "a01602.html", null ],
-      [ "NPNZ_GAIN_CONTROL_s", "a01606.html", null ],
-      [ "NPNZ_LIMITS_s", "a01610.html", null ],
+      [ "NPNZ_GAIN_CONTROL_s", "a01622.html", null ],
+      [ "NPNZ_LIMITS_s", "a01606.html", null ],
       [ "NPNZ_PORTS_s", "a01598.html", [
         [ "NPNZ_PORT_s", "a01594.html", null ]
       ] ],
